@@ -1,6 +1,6 @@
 # Data Tools: clean web data for developers and AI agents
 
-Ready-to-run Python examples for eight pay-per-use [Apify](https://apify.com/fguiraud) Actors that turn **search trends, news, documents, websites and audio** into clean JSON, Markdown, CSV and Excel.
+Ready-to-run Python examples for ten pay-per-use [Apify](https://apify.com/fguiraud) Actors that turn **search trends, news, competitor ads, documents, websites, YouTube videos and audio** into clean JSON, Markdown, CSV and Excel.
 
 🌐 Website: **https://fernandoguiraud16-coder.github.io/data-tools/**
 
@@ -12,6 +12,7 @@ Each example is a single short script plus a `sample-output.json` from a real cl
 |---|---|---|
 | [google-trends](examples/google-trends) | Compare terms over time, export to CSV, see rising searches and what's trending now | [Google Trends Scraper](https://apify.com/fguiraud/google-trends-scraper) |
 | [google-news](examples/google-news) | Save news articles as Markdown files, or get alerts for new stories only | [Google News Scraper](https://apify.com/fguiraud/google-news-scraper) |
+| [google-ads-transparency](examples/google-ads-transparency) | Every Google Search, Display and YouTube ad of a competitor, longest-running first, and alerts for new ads | [Google Ads Transparency Scraper](https://apify.com/fguiraud/google-ads-transparency-scraper) |
 | [trends-to-news](examples/trends-to-news) | Find the fastest rising searches on a topic and the news that explains them | Trends + News |
 | [pdf-to-markdown](examples/pdf-to-markdown) | PDF, Word, Excel, PowerPoint and scans to Markdown, or to RAG chunks in JSONL | [PDF to Markdown Extractor](https://apify.com/fguiraud/document-to-markdown-tables) |
 | [pdf-table-extractor](examples/pdf-table-extractor) | Every table in a PDF to an Excel workbook, one sheet per table | [PDF Table Extractor](https://apify.com/fguiraud/pdf-table-extractor) |
@@ -19,6 +20,7 @@ Each example is a single short script plus a `sample-output.json` from a real cl
 | [bulk-whois](examples/bulk-whois) | Find available and soon-to-expire domains in a list | [Bulk WHOIS Lookup](https://apify.com/fguiraud/bulk-whois-domain-lookup) |
 | [audio-transcription](examples/audio-transcription) | Audio or video to text and SRT subtitles, 99 languages | [Audio & Video Transcription](https://apify.com/fguiraud/audio-video-transcriber) |
 | [podcast-transcripts](examples/podcast-transcripts) | Transcribe only the new episodes of your favourite podcasts | [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper) |
+| [youtube-transcripts](examples/youtube-transcripts) | YouTube videos and Shorts to Markdown with timestamps, SRT or text, in any caption language | [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper) |
 | [mcp-agents](examples/mcp-agents) | Use all of these as tools in Claude, Cursor or any MCP client | Apify MCP server |
 
 ## Quick start
@@ -39,7 +41,7 @@ Each example is a single short script plus a `sample-output.json` from a real cl
 
 ## Pricing
 
-All Actors are **pay per result**: you pay a fraction of a cent per item (term, article, document, domain or audio minute), and failed or empty items are not charged. Apify's free plan includes monthly credits, enough to try every example. Exact prices are on each Actor's page.
+All Actors are **pay per result**: you pay a fraction of a cent per item (term, article, ad, document, domain, video or audio minute), and failed or empty items are not charged. Apify's free plan includes monthly credits, enough to try every example. Exact prices are on each Actor's page.
 
 ## Support
 

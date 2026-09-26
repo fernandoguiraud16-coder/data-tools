@@ -7,7 +7,7 @@ Every Actor here is available to AI agents through the [Apify MCP server](https:
 Pick the tools you want with the `tools` parameter:
 
 ```text
-https://mcp.apify.com?tools=fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/document-to-markdown-tables,fguiraud/website-tech-dns-whois-ssl,fguiraud/audio-video-transcriber
+https://mcp.apify.com?tools=fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/document-to-markdown-tables,fguiraud/website-tech-dns-whois-ssl,fguiraud/audio-video-transcriber,fguiraud/google-ads-transparency-scraper,fguiraud/youtube-transcript-scraper
 ```
 
 You connect with your own Apify account (sign-in or API token, depending on the client), and runs are billed to that account. See the [Apify MCP docs](https://docs.apify.com/platform/integrations/mcp) for client-specific setup.
@@ -39,3 +39,5 @@ Add a remote MCP server with the URL above in the client's MCP settings. For cli
 - *"Convert this PDF to Markdown and list every table: https://example.com/report.pdf"*
 - *"What CMS and email provider do stripe.com and shopify.com use?"*
 - *"Transcribe this recording and give me the key points: https://example.com/call.mp3"*
+- *"Summarize this YouTube talk and list the key takeaways: https://youtu.be/arj7oStGLkU"*
+- *"Which Google ads has ClickUp been running the longest in the US?"*

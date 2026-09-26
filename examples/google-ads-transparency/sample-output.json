@@ -1,0 +1,116 @@
+{
+  "input": {
+    "advertisers": [
+      "Nike"
+    ],
+    "region": "US",
+    "maxAdsPerSearch": 3,
+    "includeDetails": true
+  },
+  "note": "Real cloud run, September 2026. variationPreviews shortened.",
+  "items": [
+    {
+      "advertiserId": "AR16735076323512287233",
+      "advertiserName": "Nike, Inc.",
+      "creativeId": "CR14816107922324455425",
+      "format": "text",
+      "imageUrl": "https://tpc.googlesyndication.com/archive/simgad/13032697780638502283",
+      "imageHeight": 322,
+      "imageWidth": 364,
+      "firstShown": "2023-11-16T21:47:52Z",
+      "lastShown": "2026-09-26T18:43:50Z",
+      "daysRunning": 1045,
+      "adUrl": "https://adstransparency.google.com/advertiser/AR16735076323512287233/creative/CR14816107922324455425?region=US",
+      "searchedBy": "advertiser: Nike",
+      "region": "US",
+      "status": "ok",
+      "variations": 4,
+      "variationPreviews": [
+        {
+          "imageUrl": "https://tpc.googlesyndication.com/archive/simgad/13032697780638502283",
+          "imageHeight": 322,
+          "imageWidth": 364
+        },
+        {
+          "imageUrl": "https://tpc.googlesyndication.com/archive/simgad/10852931480948600382",
+          "imageHeight": 273,
+          "imageWidth": 348
+        }
+      ],
+      "regionsShown": [
+        {
+          "region": "US",
+          "lastShown": "2026-09-01"
+        }
+      ]
+    },
+    {
+      "advertiserId": "AR16735076323512287233",
+      "advertiserName": "Nike, Inc.",
+      "creativeId": "CR01088440816994615297",
+      "format": "text",
+      "imageUrl": "https://tpc.googlesyndication.com/archive/simgad/7261504405105816267",
+      "imageHeight": 209,
+      "imageWidth": 348,
+      "firstShown": "2023-11-16T22:42:29Z",
+      "lastShown": "2026-09-26T18:40:37Z",
+      "daysRunning": 1045,
+      "adUrl": "https://adstransparency.google.com/advertiser/AR16735076323512287233/creative/CR01088440816994615297?region=US",
+      "searchedBy": "advertiser: Nike",
+      "region": "US",
+      "status": "ok",
+      "variations": 2,
+      "variationPreviews": [
+        {
+          "imageUrl": "https://tpc.googlesyndication.com/archive/simgad/7261504405105816267",
+          "imageHeight": 209,
+          "imageWidth": 348
+        },
+        {
+          "previewUrl": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=9975158271&creativeId=681090967915&uiFeatures=12&adGroupId=145224462905&assets=%3DH4sIAAAAAAAAAOPS5uLk2Hvy1Zp1TALMXJwc2xHM3nVT2jcwCTBycXDcuHpmraQAoxQ7x5-jiy9NYZJi5_j-8-2lmTxS7By_p-5cvppVio3j2eSDbb5S7Bwdx6BKdu4_-fUNtxQ7R39j-_TtIN2TOt4d-wOSOvlh1dUzTAB0pZkrfQAAAA&allowedVariations=39&sig=ACiVB_w62kfTr8wgS37GmgOb4VfTiwWxsQ&htmlParentId=fletch-render-7475403453017529885&responseCallback=fletchCallback7475403453017529885"
+        }
+      ],
+      "regionsShown": [
+        {
+          "region": "US",
+          "lastShown": "2026-09-01"
+        }
+      ]
+    },
+    {
+      "advertiserId": "AR16735076323512287233",
+      "advertiserName": "Nike, Inc.",
+      "creativeId": "CR17609258505057861633",
+      "format": "text",
+      "imageUrl": "https://tpc.googlesyndication.com/archive/simgad/552563570939590353",
+      "imageHeight": 174,
+      "imageWidth": 348,
+      "firstShown": "2022-11-30T14:48:13Z",
+      "lastShown": "2026-09-26T18:40:15Z",
+      "daysRunning": 1397,
+      "adUrl": "https://adstransparency.google.com/advertiser/AR16735076323512287233/creative/CR17609258505057861633?region=US",
+      "searchedBy": "advertiser: Nike",
+      "region": "US",
+      "status": "ok",
+      "variations": 5,
+      "variationPreviews": [
+        {
+          "imageUrl": "https://tpc.googlesyndication.com/archive/simgad/552563570939590353",
+          "imageHeight": 174,
+          "imageWidth": 348
+        },
+        {
+          "imageUrl": "https://tpc.googlesyndication.com/archive/simgad/13556883803486032338",
+          "imageHeight": 268,
+          "imageWidth": 364
+        }
+      ],
+      "regionsShown": [
+        {
+          "region": "US",
+          "lastShown": "2026-09-01"
+        }
+      ]
+    }
+  ]
+}

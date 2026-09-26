@@ -234,7 +234,7 @@
       <div>
         <p class="eyebrow">Pay-per-use tools on Apify</p>
         <h1><span class="raw">Messy web in.</span><br><span class="clean">Clean data out.</span></h1>
-        <p class="lede">Eight Actors that turn search trends, news, documents, websites and audio into structured JSON, Markdown and tables. Ready for RAG pipelines, AI agents and automation. You pay only for results.</p>
+        <p class="lede">Ten Actors that turn search trends, news, competitor ads, documents, websites, YouTube videos and audio into structured JSON, Markdown and tables. Ready for RAG pipelines, AI agents and automation. You pay only for results.</p>
         <div class="cta-row">
           <a class="btn primary" href="#actors">Browse the Actors</a>
           <a class="btn ghost" href="https://github.com/fernandoguiraud16-coder/data-tools/tree/main/examples">Python examples</a>
@@ -247,6 +247,8 @@
           <button type="button" role="tab" id="tab-news" aria-selected="false" data-ex="news">News</button>
           <button type="button" role="tab" id="tab-docs" aria-selected="false" data-ex="docs">Documents</button>
           <button type="button" role="tab" id="tab-domains" aria-selected="false" data-ex="domains">Domains</button>
+          <button type="button" role="tab" id="tab-ads" aria-selected="false" data-ex="ads">Ads</button>
+          <button type="button" role="tab" id="tab-youtube" aria-selected="false" data-ex="youtube">YouTube</button>
         </div>
         <div class="pane">
           <div class="label"><span>Input</span><span id="ex-actor">google-trends-scraper</span></div>
@@ -265,7 +267,7 @@
 <section class="proof" aria-label="Track record">
   <div class="wrap">
     <dl>
-      <div><dt>8</dt><dd>public Actors on the Apify Store</dd></div>
+      <div><dt>10</dt><dd>public Actors on the Apify Store</dd></div>
       <div><dt>&gt;99%</dt><dd>of runs succeed, as shown on the Store</dd></div>
       <div><dt>Daily</dt><dd>cloud tests with real inputs</dd></div>
       <div><dt>48 h</dt><dd>reply time on every issue</dd></div>
@@ -282,7 +284,7 @@
     </div>
 
     <div class="group">
-      <div><h3>Trends &amp; news</h3><p>What people search for, and the stories behind it.</p></div>
+      <div><h3>Trends, news &amp; ads</h3><p>What people search for, the stories behind it, and the ads competitors run.</p></div>
       <div class="actors">
         <a class="actor" href="https://apify.com/fguiraud/google-trends-scraper">
           <h4>Google Trends Scraper</h4>
@@ -293,6 +295,11 @@
           <h4>Google News Scraper + Full Article Text</h4>
           <p>News by keyword, topic or country with the real article URL and the full text as Markdown. Only-new-articles mode for alerts.</p>
           <div class="price"><span>$0.002 / article</span><span>+$0.002 full text</span></div>
+        </a>
+        <a class="actor" href="https://apify.com/fguiraud/google-ads-transparency-scraper">
+          <h4>Google Ads Transparency Scraper</h4>
+          <p>Every Google Search, Display and YouTube ad of any advertiser or domain, with previews, dates and countries. Only-new-ads mode for competitor alerts.</p>
+          <div class="price"><span>$0.0015 / ad</span><span></span></div>
         </a>
       </div>
     </div>
@@ -330,12 +337,17 @@
     </div>
 
     <div class="group">
-      <div><h3>Audio &amp; podcasts</h3><p>Speech to searchable text.</p></div>
+      <div><h3>Video, audio &amp; podcasts</h3><p>Speech to searchable text.</p></div>
       <div class="actors">
         <a class="actor" href="https://apify.com/fguiraud/audio-video-transcriber">
           <h4>Audio &amp; Video to Text Transcription</h4>
           <p>Whisper transcription in 99 languages with SRT and VTT subtitles. Files with no speech are not charged.</p>
           <div class="price"><span>$0.006 / minute</span><span>base model</span></div>
+        </a>
+        <a class="actor" href="https://apify.com/fguiraud/youtube-transcript-scraper">
+          <h4>YouTube Transcript Scraper</h4>
+          <p>Transcripts of any YouTube video or Short as text, SRT, VTT or Markdown, in any caption language. Videos without captions are not charged.</p>
+          <div class="price"><span>$0.003 / video</span><span></span></div>
         </a>
         <a class="actor" href="https://apify.com/fguiraud/podcast-transcript-scraper">
           <h4>Podcast Transcript Scraper</h4>
@@ -387,7 +399,7 @@
     </div>
     <div class="code">
       <div class="row"><span>MCP server URL</span><button class="copy" type="button" id="copy-mcp">Copy</button></div>
-      <pre id="mcp-url"><span class="s">https://mcp.apify.com?tools=fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/document-to-markdown-tables</span></pre>
+      <pre id="mcp-url"><span class="s">https://mcp.apify.com?tools=fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/google-ads-transparency-scraper,fguiraud/youtube-transcript-scraper,fguiraud/document-to-markdown-tables</span></pre>
     </div>
   </div>
 </section>
@@ -405,7 +417,7 @@
 <footer>
   <div class="wrap">
     <span>Data Tools · Actors published on the Apify Store as fguiraud</span>
-    <span>Google Trends and Google News are trademarks of Google LLC. These tools are not affiliated with Google.</span>
+    <span>Google Trends, Google News, Google Ads and YouTube are trademarks of Google LLC. These tools are not affiliated with Google.</span>
   </div>
 </footer>
 
@@ -430,6 +442,16 @@
       actor: "website-tech-dns-whois-ssl", price: "$0.004 per domain",
       input: { domains: ["example.com"] },
       output: { domain: "example.com", technologyNames: ["Nginx", "React"], whois: { registrar: "Example Registrar", ageDays: 9870 }, ssl: { valid: true, daysUntilExpiry: 212 }, security: { grade: "A" } }
+    },
+    ads: {
+      actor: "google-ads-transparency-scraper", price: "$0.0015 per ad",
+      input: { advertisers: ["Nike"], region: "US", maxAdsPerSearch: 100 },
+      output: { advertiserName: "Nike, Inc.", format: "text", firstShown: "2023-11-16T21:47:52Z", lastShown: "2026-09-26T18:43:50Z", daysRunning: 1045, searchedBy: "advertiser: Nike" }
+    },
+    youtube: {
+      actor: "youtube-transcript-scraper", price: "$0.003 per video",
+      input: { videos: ["https://youtu.be/arj7oStGLkU"], languages: ["en"] },
+      output: { title: "Inside the Mind of a Master Procrastinator | Tim Urban | TED", language: "en", isAutoGenerated: false, wordCount: 2277, segments: [{ start: 12.64, end: 14.02, text: "So in college," }, { start: 15.35, end: 16.91, text: "I was a government major," }] }
     }
   };
 
