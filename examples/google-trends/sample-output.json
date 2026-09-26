@@ -1,0 +1,361 @@
+{
+  "input": {
+    "searchTerms": [
+      "chatgpt, gemini, claude"
+    ],
+    "geo": [
+      "US"
+    ],
+    "timeframe": "today 12-m",
+    "outputs": [
+      "interestOverTime",
+      "relatedQueries"
+    ],
+    "trendingNow": [
+      "US"
+    ]
+  },
+  "items": [
+    {
+      "type": "explore",
+      "terms": [
+        "chatgpt",
+        "gemini",
+        "claude"
+      ],
+      "geo": "US",
+      "timeframe": "today 12-m",
+      "category": 0,
+      "property": "web",
+      "exploreUrl": "https://trends.google.com/trends/explore?q=chatgpt%2Cgemini%2Cclaude&date=today+12-m&hl=en-US&geo=US",
+      "interestOverTime": [
+        {
+          "date": "2026-08-30T00:00:00Z",
+          "label": "Aug 30 – Sep 5, 2026",
+          "values": {
+            "chatgpt": 83,
+            "gemini": 32,
+            "claude": 20
+          }
+        },
+        {
+          "date": "2026-09-06T00:00:00Z",
+          "label": "Sep 6 – 12, 2026",
+          "values": {
+            "chatgpt": 75,
+            "gemini": 31,
+            "claude": 18
+          }
+        },
+        {
+          "date": "2026-09-13T00:00:00Z",
+          "label": "Sep 13 – 19, 2026",
+          "values": {
+            "chatgpt": 77,
+            "gemini": 32,
+            "claude": 19
+          }
+        },
+        {
+          "date": "2026-09-20T00:00:00Z",
+          "label": "Sep 20 – 26, 2026",
+          "values": {
+            "chatgpt": 75,
+            "gemini": 34,
+            "claude": 20
+          },
+          "isPartial": true
+        },
+        "... earlier weeks omitted"
+      ],
+      "averages": {
+        "chatgpt": 77,
+        "gemini": 27,
+        "claude": 18
+      },
+      "summary": {
+        "chatgpt": {
+          "latest": 77,
+          "average": 77.2,
+          "peak": 100,
+          "peakDate": "2025-10-19T00:00:00Z",
+          "changePercent": -20.9,
+          "trend": "falling"
+        },
+        "gemini": {
+          "latest": 32,
+          "average": 27,
+          "peak": 36,
+          "peakDate": "2026-04-19T00:00:00Z",
+          "changePercent": 27.8,
+          "trend": "rising"
+        },
+        "claude": {
+          "latest": 19,
+          "average": 18.1,
+          "peak": 33,
+          "peakDate": "2026-05-24T00:00:00Z",
+          "changePercent": 227.9,
+          "trend": "rising"
+        }
+      },
+      "relatedQueries": {
+        "chatgpt": {
+          "top": [
+            {
+              "query": "what is chatgpt",
+              "value": 100
+            },
+            {
+              "query": "ai chatgpt",
+              "value": 89
+            },
+            {
+              "query": "openai",
+              "value": 67
+            },
+            "... 20 more"
+          ],
+          "rising": [
+            {
+              "query": "chatgpt caricature",
+              "value": 3300,
+              "label": "+3,300%",
+              "growthPercent": 3300
+            },
+            {
+              "query": "how to use chatgpt effectively",
+              "value": 2050,
+              "label": "+2,050%",
+              "growthPercent": 2050
+            },
+            {
+              "query": "sam altman chatgpt water usage",
+              "value": 1900,
+              "label": "+1,900%",
+              "growthPercent": 1900
+            },
+            "... 13 more"
+          ]
+        },
+        "gemini": {
+          "top": [
+            {
+              "query": "google gemini",
+              "value": 100
+            },
+            {
+              "query": "ai",
+              "value": 88
+            },
+            {
+              "query": "ai gemini",
+              "value": 87
+            },
+            "... 22 more"
+          ],
+          "rising": [
+            {
+              "query": "gemini spark",
+              "value": 400,
+              "label": "+400%",
+              "growthPercent": 400
+            },
+            {
+              "query": "gemini notebook",
+              "value": 130,
+              "label": "+130%",
+              "growthPercent": 130
+            },
+            {
+              "query": "claude",
+              "value": 130,
+              "label": "+130%",
+              "growthPercent": 130
+            },
+            "... 7 more"
+          ]
+        },
+        "claude": {
+          "top": [
+            {
+              "query": "ai claude",
+              "value": 100
+            },
+            {
+              "query": "claude code",
+              "value": 78
+            },
+            {
+              "query": "anthropic claude",
+              "value": 31
+            },
+            "... 22 more"
+          ],
+          "rising": [
+            {
+              "query": "claude cowork",
+              "value": 71350,
+              "label": "Breakout",
+              "growthPercent": 71350
+            },
+            {
+              "query": "claude fable 5",
+              "value": 65600,
+              "label": "Breakout",
+              "growthPercent": 65600
+            },
+            {
+              "query": "openclaw",
+              "value": 64000,
+              "label": "Breakout",
+              "growthPercent": 64000
+            },
+            "... 22 more"
+          ]
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "type": "trending",
+      "geo": "US",
+      "rank": 1,
+      "query": "hotel",
+      "approxTraffic": "200+",
+      "approxTrafficNumber": 200,
+      "published": "2026-09-25T23:30:00-07:00",
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQHJtX8sGvBvTWnQJca4mpVO3c266qSGzBSCRr_iE1sNDbzmVaZ45CdRiyT6g",
+      "news": [
+        {
+          "title": "Two arrests made after men emerged from New York City sewers",
+          "url": "https://www.bbc.com/news/articles/cwddvv44091vo",
+          "source": "BBC"
+        },
+        {
+          "title": "Pair arrested after emerging from manhole near hotel where Netanyahu stays, police say",
+          "url": "https://www.cnn.com/2026/09/25/us/nyc-sewer-manhole-arrests",
+          "source": "CNN"
+        },
+        {
+          "title": "Mystery solved? Two arrested in connection with NYC’s sewer emergence",
+          "url": "https://www.nbcnews.com/news/us-news/two-arrested-connection-nycs-sewer-emergence-rcna599865",
+          "source": "NBC News"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "type": "trending",
+      "geo": "US",
+      "rank": 2,
+      "query": "new movies streaming",
+      "approxTraffic": "2000+",
+      "approxTrafficNumber": 2000,
+      "published": "2026-09-25T23:10:00-07:00",
+      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDoG28BaF8ql72iInnFmxiL-_qgK8T8ZB5Gk3S_caIoh0xlzi1osys9SY6RfU",
+      "news": [
+        {
+          "title": "Five new movies and TV shows to watch this rainy weekend",
+          "url": "https://www.bostonglobe.com/2026/09/25/arts/backrooms-streaming/",
+          "source": "The Boston Globe"
+        },
+        {
+          "title": "New Movies & Shows To Stream This Weekend: UNABOMBER American Horror Story: 13 Backrooms and More",
+          "url": "https://decider.com/2026/09/25/best-new-movies-shows-weekend-netflix-hulu-amazon-prime-hbo-september-25-2026/",
+          "source": "Decider"
+        },
+        {
+          "title": "From 'Toy Story 5' to 'The Love Hypothesis,' 10 movies to stream now",
+          "url": "https://www.usatoday.com/story/entertainment/movies/2026/09/25/new-movies-streaming-netflix-hulu-hbo-max-prime-video-disney/91827649007/",
+          "source": "USA Today"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "type": "trending",
+      "geo": "US",
+      "rank": 3,
+      "query": "amanda bynes",
+      "approxTraffic": "100+",
+      "approxTrafficNumber": 100,
+      "published": "2026-09-25T22:40:00-07:00",
+      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQQEXklWY5_xU7FJjr6NyMVb_9PACGXfGpWebDD86ni5dDkavDeIvFOsHKpos",
+      "news": [
+        {
+          "title": "Amanda Bynes Called Out by Fans for Selling Pricey Handmade Purse That Looks Like a ‘Trash Bag’",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/amanda-bynes-called-fans-selling-183549679.html",
+          "source": "Yahoo"
+        },
+        {
+          "title": "Amanda Bynes Turned Heads in Tiny Leather Shorts; Now She's Designing Her Own Bags",
+          "url": "https://www.theolympian.com/entertainment/article317315942.html",
+          "source": "The Olympian"
+        },
+        {
+          "title": "Amanda Bynes' New Purse Designs From Her Fashion Brand Divide Social Media: Photos",
+          "url": "https://www.aol.com/articles/amanda-bynes-purse-designs-her-161342000.html",
+          "source": "AOL.com"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "type": "trending",
+      "geo": "US",
+      "rank": 4,
+      "query": "breaking bad",
+      "approxTraffic": "100+",
+      "approxTrafficNumber": 100,
+      "published": "2026-09-25T22:40:00-07:00",
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBaWbnRpIN5CuHWrArtGSe1gwCSbgm0wY0bMhb5HxBcf4rQ7sieRMzVWFyVp8",
+      "news": [
+        {
+          "title": "The 100 Best TV Shows of the 21st Century",
+          "url": "https://www.nytimes.com/interactive/2026/arts/television/best-tv-shows-21st-century.html",
+          "source": "The New York Times"
+        },
+        {
+          "title": "‘The Sopranos’ Was Left Off The New York Times’ 100 Best TV Shows List — Here’s Why",
+          "url": "https://www.forbes.com/sites/erikkain/2026/09/25/the-sopranos-new-york-times-100-best-tv-shows-list/",
+          "source": "Forbes"
+        },
+        {
+          "title": "'Atlanta' makes top 10 of New York Times list of 100 best TV shows of 21st century",
+          "url": "https://www.11alive.com/article/news/entertainment-news/atlanta-tv-show-makes-top-10-new-york-times-best-100-shows-of-21st-century-list/85-86023fbb-e8de-4071-beb0-922b71cd9039",
+          "source": "11Alive.com"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "type": "trending",
+      "geo": "US",
+      "rank": 5,
+      "query": "zendaya",
+      "approxTraffic": "200+",
+      "approxTrafficNumber": 200,
+      "published": "2026-09-25T22:20:00-07:00",
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4hbqYNYmjCcEp8m6Vem2gjfKVHe6Hyz7_vWRvjjojG9_o5SjAPjRzHtMAdME",
+      "news": [
+        {
+          "title": "How Zendaya felt when her stylist, Law Roach, revealed she secretly got married",
+          "url": "https://www.hola.com/us/celebrities/20260925925518/how-zendaya-felt-when-law-roach-revealed-secretly-married/",
+          "source": "HOLA"
+        },
+        {
+          "title": "How Zendaya Really Feels About Law Roach Announcing Her Wedding to Tom Holland",
+          "url": "https://www.eonline.com/news/1436443/zendaya-tom-holland-wedding-law-roach-shares-her-reaction-to-his-reveal",
+          "source": "E! News"
+        },
+        {
+          "title": "Zendaya’s Stylist Reveals Her Reaction To Him Spilling The Tea On Her Marriage To Tom Holland",
+          "url": "https://www.huffpost.com/entry/law-roach-zendaya-reaction-reveal-secretly-married-tom-holland_n_6ab590cce4b075a3d284eeeb",
+          "source": "HuffPost"
+        }
+      ],
+      "status": "ok"
+    }
+  ]
+}

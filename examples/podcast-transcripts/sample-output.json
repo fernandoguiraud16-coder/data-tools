@@ -1,0 +1,51 @@
+{
+  "input": {
+    "podcastFeeds": [
+      "NPR News Now",
+      "https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584"
+    ],
+    "maxEpisodesPerFeed": 1,
+    "onlyNewEpisodes": false,
+    "outputs": [
+      "text"
+    ],
+    "maxDurationMinutes": 3,
+    "model": "tiny",
+    "language": "auto",
+    "task": "transcribe",
+    "aiInsights": false,
+    "insightsModel": "claude-opus-5",
+    "saveFiles": false,
+    "skipSilence": true,
+    "wordTimestamps": false,
+    "chunkSize": 1000,
+    "failOnError": false
+  },
+  "items": [
+    {
+      "podcast": "NPR News Now",
+      "episodeTitle": "NPR News: 09-24-2026 1AM EDT",
+      "published": "2026-09-24T05:10:11+00:00",
+      "audioUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/aed306bc-5394-47ec-9b5a-eae193953536/audio/128/default.mp3?awCollectionId [...]",
+      "feed": "https://feeds.npr.org/500005/podcast.xml",
+      "status": "ok",
+      "model": "tiny",
+      "task": "transcribe",
+      "language": "en",
+      "languageProbability": 0.994,
+      "durationSeconds": 280.06,
+      "transcribedSeconds": 180,
+      "billedMinutes": 3,
+      "text": "Live from NPR News on July, Snyder. Australia's Prime Minister says an AI agent created by OpenAI infiltrated a government website. The government says the incident occurred in June, but Christina Cuculio reports that OpenAI reported it just two weeks ago. Speaking in New York at the United Nations [...]",
+      "stats": {
+        "processingSeconds": 9.39,
+        "speedFactor": 19.2,
+        "segments": 8,
+        "words": 459
+      },
+      "warnings": [
+        "Only the first 3.0 min were transcribed (maxDurationMinutes or the run spending limit was reached)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+.env
+# Files the examples write when you run them
+articles/
+markdown/
+transcripts/
+podcasts/
+*.csv
+*.xlsx
+chunks.jsonl
+briefing.md

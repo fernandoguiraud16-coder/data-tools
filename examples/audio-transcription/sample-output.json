@@ -1,0 +1,72 @@
+{
+  "input": {
+    "sources": [
+      {
+        "url": "https://github.com/openai/whisper/raw/main/tests/jfk.flac"
+      },
+      {
+        "url": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3"
+      }
+    ],
+    "outputs": [
+      "text",
+      "srt"
+    ],
+    "model": "tiny",
+    "failOnError": true,
+    "maxEpisodesPerFeed": 3,
+    "onlyNewEpisodes": true,
+    "language": "auto",
+    "task": "transcribe",
+    "aiInsights": false,
+    "insightsModel": "claude-opus-5",
+    "saveFiles": false,
+    "wordTimestamps": false,
+    "chunkSize": 1000,
+    "skipSilence": true,
+    "maxDurationMinutes": 240,
+    "maxFileSizeMb": 1000
+  },
+  "items": [
+    {
+      "source": "https://github.com/openai/whisper/raw/main/tests/jfk.flac",
+      "status": "ok",
+      "model": "tiny",
+      "task": "transcribe",
+      "language": "en",
+      "languageProbability": 0.962,
+      "durationSeconds": 11,
+      "transcribedSeconds": 11,
+      "billedMinutes": 1,
+      "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country",
+      "srt": "1\n00:00:00,000 --> 00:00:10,900\nAnd so my fellow Americans ask not what your country can do for you ask what you can do for your country\n",
+      "stats": {
+        "processingSeconds": 1.68,
+        "speedFactor": 6.5,
+        "segments": 1,
+        "words": 22
+      },
+      "warnings": []
+    },
+    {
+      "source": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3",
+      "status": "ok",
+      "model": "tiny",
+      "task": "transcribe",
+      "language": "en",
+      "languageProbability": 0.996,
+      "durationSeconds": 157.88,
+      "transcribedSeconds": 157.88,
+      "billedMinutes": 3,
+      "text": "This is a Librevox recording. All Librevox recordings are in the public domain. For more information or devolent here, please visit Librevox.org. The Getty Spurig address by Abraham Lincoln, November 19, 1863. Four score and seven years ago, our fathers brought forth on this continent, a new nation [...]",
+      "srt": "1\n00:00:00,050 --> 00:00:32,400\nThis is a Librevox recording. All Librevox recordings are in the public domain. For more information or devolent here, please visit Librevox.org. The Getty Spurig address by Abraham Lincoln, November 19, 1863. Four score and seven years ago, our fathers brought forth [...]",
+      "stats": {
+        "processingSeconds": 7.2,
+        "speedFactor": 21.9,
+        "segments": 5,
+        "words": 306
+      },
+      "warnings": []
+    }
+  ]
+}

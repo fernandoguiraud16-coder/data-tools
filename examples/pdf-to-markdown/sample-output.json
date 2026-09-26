@@ -1,0 +1,141 @@
+{
+  "input": {
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/stable/examples/pdfs/background-checks.pdf"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/ccitt.pdf"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/tesseract-ocr/test/main/testing/phototest.tif"
+      },
+      "... 3 more"
+    ],
+    "outputs": [
+      "markdown",
+      "tables"
+    ],
+    "failOnError": true,
+    "followDocumentLinks": false,
+    "maxLinkedDocuments": 20,
+    "saveFiles": false,
+    "tableDetection": "lines",
+    "removeHeadersFooters": true,
+    "ocr": "auto",
+    "ocrLanguages": [
+      "eng"
+    ],
+    "maxPages": 500,
+    "chunkSize": 1000,
+    "chunkOverlap": 100,
+    "maxFileSizeMb": 50,
+    "maxCharactersPerDocument": 0,
+    "extractionModel": "claude-opus-5",
+    "maxConcurrency": 2
+  },
+  "items": [
+    {
+      "source": "https://raw.githubusercontent.com/jsvine/pdfplumber/stable/examples/pdfs/background-checks.pdf",
+      "status": "ok",
+      "fileType": "pdf",
+      "metadata": {
+        "title": null,
+        "author": null,
+        "subject": null,
+        "creator": null,
+        "producer": "Mac OS X 10.9.5 Quartz PDFContext",
+        "created": "2015-12-12T18:49:57",
+        "modified": "2015-12-12T18:49:57",
+        "pageCount": 1,
+        "language": "en"
+      },
+      "stats": {
+        "pagesProcessed": 1,
+        "ocrPages": 0,
+        "tables": 1,
+        "characters": 5650
+      },
+      "markdown": "| NICS Firearm Background Checks November - 2015 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| State / Territory | Per [...]",
+      "tables": [
+        {
+          "index": 0,
+          "page": 1,
+          "header": [
+            "NICS Firearm Background Checks November - 2015",
+            "",
+            "",
+            "... 22 more"
+          ],
+          "rows": [
+            [
+              "State / Territory",
+              "Permit Handgun Long Gun *Other **Multiple Admin",
+              "",
+              "... 22 more"
+            ],
+            [
+              "",
+              "",
+              "",
+              "... 22 more"
+            ],
+            [
+              "Alabama",
+              "18,870",
+              "23,022",
+              "... 22 more"
+            ],
+            "... 56 more"
+          ],
+          "csv": "NICS Firearm Background Checks November - 2015,,,,,,,,,,,,,,,,,,,,,,,,\nState / Territory,Permit Handgun Long Gun *Other **Multiple Admin,,,,,,Pre-Pawn,,,Redemption,,,Returned/Disposition,,,Rentals,,Pr [...]"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "https://raw.githubusercontent.com/tesseract-ocr/test/main/testing/phototest.tif",
+      "status": "ok",
+      "fileType": "image",
+      "metadata": {
+        "width": 640,
+        "height": 480,
+        "format": "TIFF",
+        "pageCount": 1,
+        "language": "en"
+      },
+      "stats": {
+        "pagesProcessed": 1,
+        "ocrPages": 1,
+        "tables": 0,
+        "characters": 285
+      },
+      "markdown": "This is a lot of 12 point text to test the ocr code and see if it works on all types of file format.\n\nThe quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox.",
+      "tables": [],
+      "warnings": []
+    },
+    {
+      "source": "https://raw.githubusercontent.com/python-openxml/python-docx/master/tests/test_files/test.docx",
+      "status": "ok",
+      "fileType": "docx",
+      "metadata": {
+        "title": null,
+        "author": "Cisco Employee",
+        "subject": null,
+        "created": "2013-12-15T10:40:00+00:00",
+        "modified": "2013-12-15T10:40:00+00:00",
+        "pageCount": null,
+        "language": null
+      },
+      "stats": {
+        "pagesProcessed": 1,
+        "ocrPages": 0,
+        "tables": 0,
+        "characters": 47
+      },
+      "markdown": "# python-docx was here!\n\npython-docx was here too!",
+      "tables": [],
+      "warnings": []
+    }
+  ]
+}

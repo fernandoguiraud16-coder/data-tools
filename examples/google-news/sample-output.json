@@ -1,0 +1,116 @@
+{
+  "input": {
+    "queries": [
+      "AI regulation"
+    ],
+    "timeRange": "7d",
+    "maxArticlesPerQuery": 6,
+    "fullText": true,
+    "country": "US",
+    "language": "en"
+  },
+  "items": [
+    {
+      "title": "Opinion | The Wild West of A.I. Needs to End. Here’s How.",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com",
+      "publishedAt": "2026-09-24T19:00:07Z",
+      "url": "https://www.nytimes.com/2026/09/24/opinion/ai-regulation-government-tech-industry.html",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWlF5akhVUTNRUkYyRDc4cmpRYzR1XzBlU3ZmcDU5c0VPM1pWTU9kQlBoVjh3X1ZSV0VwaVlXMUFTR19xeVNTNDRWRlp0bnNidVB5amN5LVpfY3VoWGU5REtfRUZXMDFUNmEyRXFwaXNFUWppRTd [...]",
+      "foundBy": [
+        "search: AI regulation"
+      ],
+      "fullTextStatus": "blocked",
+      "fullTextError": "HTTP 403",
+      "status": "ok"
+    },
+    {
+      "title": "US, Chinese visions for AI regulation differ sharply at UN meeting",
+      "source": "politico.com",
+      "sourceUrl": "https://www.politico.com",
+      "publishedAt": "2026-09-23T22:47:00Z",
+      "url": "https://www.politico.com/news/2026/09/23/us-chinese-visions-for-ai-regulation-differ-sharply-at-un-meeting-01090906",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSlFqNC1IVTNTcW5WbjRnQldjamFyTlpzTUNBckgxRWFONjhYQzdkS1hzelpzb2M4ZndSR1k2N3pxRXlraWsxeTNLUk52Vm5vMmFYVFNSTXY1WGpuVnYtSFAxQVdmcXJOZ1JRT25RRk1MMHVKaUw [...]",
+      "foundBy": [
+        "search: AI regulation"
+      ],
+      "fullTextStatus": "blocked",
+      "fullTextError": "HTTP 403",
+      "status": "ok"
+    },
+    {
+      "title": "The Curious Left-Wing Argument Against New AI Regulations",
+      "source": "The Atlantic",
+      "sourceUrl": "https://www.theatlantic.com",
+      "publishedAt": "2026-09-21T11:30:00Z",
+      "url": "https://www.theatlantic.com/ideas/2026/09/ai-regulation-anti-monopoly-challenge/688707/",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOFhURENiekFoVGJMcUZfdFFBVkRkdUtRdEdxajZjVndsTEx3dDdxUFB1ZlV2NFpEcHp2UFFSWDBBVHNLZjRqSUdLU1hjU1hWS2tMQXJBNU5GSjdybDFlUVh0ZjFBUjJkZXgzbmNVRlUwS1BLTll [...]",
+      "foundBy": [
+        "search: AI regulation"
+      ],
+      "fullTextStatus": "blocked",
+      "fullTextError": "HTTP 403",
+      "status": "ok"
+    },
+    {
+      "title": "OpenAI, Anthropic CEOs call for global AI regulation at UN",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com",
+      "publishedAt": "2026-09-24T00:16:08Z",
+      "url": "https://www.aljazeera.com/news/2026/9/24/ai-corporate-leaders-tell-un-the-industry-needs-global-regulation",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPN0hzQXdsOUFjUXNVSG54blc0cW9Fd2RDQXZxaXdIRWhEYU90R1dSd3VvWk5Qa2R6aHRDZjhjUEZJY2Znc0xMU2tsQUNMZG9nQlp2VnQzeDFaSVFfeEI0V1lUeDlNZ0tySXlWbngwX0JDbXVpRHA [...]",
+      "foundBy": [
+        "search: AI regulation"
+      ],
+      "author": "Al Jazeera Staff",
+      "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6ab442d61f2d-1790198486.jpg?resize=1920%2C1440",
+      "description": "Industry leaders urge global regulation, as Trump administration baulks at setting up new guardrails.",
+      "articleDate": "2026-09-24",
+      "text": "The heads of several major AI firms told the United Nations Security Council (UNSC) their industry urgently needed global oversight to avoid dangers that could threaten the whole world.\n\n“If managed poorly, I even believe AI could be a risk to humanity as a whole,” Dario Amodei, the chief executive [...]",
+      "wordCount": 818,
+      "fullTextStatus": "ok",
+      "textFormat": "markdown",
+      "status": "ok"
+    },
+    {
+      "title": "Trump rejects AI regulation, citing parallels with climate change, in U.N. address",
+      "source": "Scientific American",
+      "sourceUrl": "https://www.scientificamerican.com",
+      "publishedAt": "2026-09-22T16:00:00Z",
+      "url": "https://www.scientificamerican.com/article/trump-rejects-ai-regulation-citing-parallels-with-climate-change-in-un-address/",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOWZfbEItUmtMUWM5bklpRDBsQ0dPdTQxcDR0dnZaaDF1V0VoVFE1Tm1UWm1GWjVFVFl5aHJCZTlSckVMa3dYUFl6c3Bka1VHYlJHR1pZRHc1LWY1YmRlekV1aFNFbkM0THh4S2lYMXlwMGQ1MkZ [...]",
+      "foundBy": [
+        "search: AI regulation"
+      ],
+      "author": "Adam Kovac",
+      "image": "https://static.scientificamerican.com/dam/asset/9df7fe36-75ba-4336-b781-4b7ed583411d/Trump-UN.jpg?m=1790096253.343&w=1200",
+      "description": "The president also said artificial intelligence should be rebranded as “super intelligence”",
+      "articleDate": "2026-09-22",
+      "text": "President Donald Trump rejected international efforts to regulate artificial intelligence during a speech to the United Nations General Assembly on Tuesday. Trump compared the apparent risks of AI to climate change and falsely claimed that the latter has been a hoax that hasn’t lived up to warnings [...]",
+      "wordCount": 363,
+      "fullTextStatus": "ok",
+      "textFormat": "markdown",
+      "status": "ok"
+    },
+    {
+      "title": "Bill Gates says AI companies self-regulating isn’t enough and governments should be involved in monitoring",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com",
+      "publishedAt": "2026-09-25T11:00:41Z",
+      "url": "https://www.nbcnews.com/politics/politics-news/bill-gates-ai-companies-self-regulating-governments-monitoring-rcna599619",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRTZSNVpkQ0tEcVhwLVJmT3o2Rnp0c3dEd0lkbDZydVVGUmZFLU10RHE0dWl0SzNHUDVrWHhTSS1JX0libWJHaDZpNnFJMlQ0WUlWcHl4NDNQWWNtY1pvUmNBX3oySXVPRkVSdWdaSlp0Z1Z3LUl [...]",
+      "foundBy": [
+        "search: AI regulation"
+      ],
+      "author": "Alexandra Marquez",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-09/260924-bill-gates-ch-1034-d8ab34.jpg",
+      "description": "The Microsoft co-founder and billionaire philanthropist said AI is capable of helping bad actors harm billions of people.",
+      "articleDate": "2026-09-25",
+      "text": "Microsoft co-founder and billionaire philanthropist Bill Gates on Wednesday called for lawmakers in Washington to regulate the development of artificial intelligence, weeks after the CEOs of some of the nation’s biggest AI labs agreed on the need to slow the pace of AI progress.\n\n“No one thinks self [...]",
+      "wordCount": 906,
+      "fullTextStatus": "ok",
+      "textFormat": "markdown",
+      "status": "ok"
+    }
+  ]
+}

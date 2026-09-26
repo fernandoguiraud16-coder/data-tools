@@ -1,0 +1,85 @@
+{
+  "input": {
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/stable/examples/pdfs/background-checks.pdf"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/ccitt.pdf"
+      }
+    ],
+    "saveFiles": true,
+    "tableDetection": "lines",
+    "followDocumentLinks": false,
+    "maxLinkedDocuments": 20,
+    "ocr": "auto",
+    "ocrLanguages": [
+      "eng"
+    ],
+    "maxPages": 500,
+    "maxFileSizeMb": 50,
+    "failOnError": false,
+    "maxConcurrency": 2
+  },
+  "items": [
+    {
+      "source": "https://raw.githubusercontent.com/jsvine/pdfplumber/stable/examples/pdfs/background-checks.pdf",
+      "status": "ok",
+      "fileType": "pdf",
+      "tableCount": 1,
+      "pagesProcessed": 1,
+      "ocrPages": 0,
+      "tables": [
+        {
+          "index": 0,
+          "page": 1,
+          "header": [
+            "NICS Firearm Background Checks November - 2015",
+            "",
+            "",
+            "... 22 more"
+          ],
+          "rows": [
+            [
+              "State / Territory",
+              "Permit Handgun Long Gun *Other **Multiple Admin",
+              "",
+              "... 22 more"
+            ],
+            [
+              "",
+              "",
+              "",
+              "... 22 more"
+            ],
+            [
+              "Alabama",
+              "18,870",
+              "23,022",
+              "... 22 more"
+            ],
+            "... 56 more"
+          ],
+          "csv": "NICS Firearm Background Checks November - 2015,,,,,,,,,,,,,,,,,,,,,,,,\nState / Territory,Permit Handgun Long Gun *Other **Multiple Admin,,,,,,Pre-Pawn,,,Redemption,,,Returned/Disposition,,,Rentals,,Pr [...]"
+        }
+      ],
+      "files": {
+        "tables": [
+          "https://api.apify.com/v2/key-value-stores/HdyjbJNkY87vsmO7r/records/001-background-checks-table-1.csv?signature=..."
+        ],
+        "xlsx": "https://api.apify.com/v2/key-value-stores/HdyjbJNkY87vsmO7r/records/001-background-checks-tables.xlsx?signature=..."
+      },
+      "metadata": {
+        "title": null,
+        "author": null,
+        "subject": null,
+        "creator": null,
+        "producer": "Mac OS X 10.9.5 Quartz PDFContext",
+        "created": "2015-12-12T18:49:57",
+        "modified": "2015-12-12T18:49:57",
+        "pageCount": 1,
+        "language": "en"
+      }
+    }
+  ]
+}

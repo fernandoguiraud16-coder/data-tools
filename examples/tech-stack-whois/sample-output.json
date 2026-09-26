@@ -1,0 +1,641 @@
+{
+  "input": {
+    "domains": [
+      "wordpress.org",
+      "apify.com",
+      "bbc.co.uk"
+    ],
+    "failOnError": true,
+    "checks": [
+      "tech",
+      "whois",
+      "dns",
+      "... 5 more"
+    ],
+    "monitorChanges": false,
+    "alertDaysBeforeExpiry": 30,
+    "pageSpeedStrategy": "mobile",
+    "maxConcurrency": 10
+  },
+  "items": [
+    {
+      "input": "wordpress.org",
+      "host": "wordpress.org",
+      "domain": "wordpress.org",
+      "http": {
+        "finalUrl": "https://wordpress.org/",
+        "statusCode": 200,
+        "redirects": [],
+        "httpsOnly": true,
+        "responseTimeMs": 152,
+        "ttfbMs": 146,
+        "server": "nginx",
+        "poweredBy": null,
+        "title": "Blog Tool, Publishing Platform, and CMS – WordPress.org",
+        "description": "Open source software which you can use to easily create a beautiful website, blog, or app.",
+        "language": "en-US",
+        "canonicalUrl": "https://wordpress.org/",
+        "siteName": "WordPress.org",
+        "socialProfiles": {
+          "x": "https://www.x.com/WordPress",
+          "facebook": "https://www.facebook.com/WordPress",
+          "instagram": "https://www.instagram.com/wordpress",
+          "linkedin": "https://www.linkedin.com/company/wordpress",
+          "tiktok": "https://www.tiktok.com/@wordpress"
+        },
+        "securityHeaders": {
+          "hsts": true,
+          "csp": false,
+          "xFrameOptions": true,
+          "xContentTypeOptions": false,
+          "referrerPolicy": false,
+          "permissionsPolicy": false
+        },
+        "securityHeadersScore": "2/6"
+      },
+      "dns": {
+        "a": [
+          "66.6.42.252"
+        ],
+        "aaaa": [
+          "2620:109:b00a::4206:2afc"
+        ],
+        "mx": [
+          "10 smtp1-dca.wordpress.org",
+          "10 smtp2-dca.wordpress.org"
+        ],
+        "ns": [
+          "ns1.wordpress.org",
+          "ns2.wordpress.org",
+          "ns3.wordpress.org",
+          "... 1 more"
+        ],
+        "txt": [
+          "google-site-verification=UL0sGJ1dZbCT4J7pGrLW3hqM_I1LJ8pUi2WBEI_98kI",
+          "google-site-verification=t8FjG1vzC4OFZJ8qL4SkR8xxtLyKldXKbswyeemQS5w",
+          "v=spf1 ip4:66.6.42.0/24 ip4:66.155.40.0/24 include:helpscoutemail.com -all"
+        ],
+        "caa": [
+          "0 iodef \"mailto:caa@wordpress.org\"",
+          "0 issue \"letsencrypt.org;validationmethods=dns-01;accounturi=https://acme-v02.api.letsencrypt.org/acme/acct/53691143\""
+        ],
+        "soa": "ns1.wordpress.org. hostmaster.wordpress.org. 20123417 7200 7200 1209600 86400",
+        "cname": null,
+        "emailSecurity": {
+          "spf": "v=spf1 ip4:66.6.42.0/24 ip4:66.155.40.0/24 include:helpscoutemail.com -all",
+          "dmarc": "v=DMARC1; p=reject; pct=100; rua=mailto:0bqp2jnw@ag.dmarcian.com; ruf=mailto:0bqp2jnw@fr.dmarcian.com;",
+          "dmarcPolicy": "reject"
+        },
+        "emailProvider": "Self-hosted / other"
+      },
+      "whois": {
+        "registrar": "MarkMonitor Inc.",
+        "registrarIanaId": "292",
+        "created": "2003-03-28T01:07:35.665Z",
+        "updated": "2026-08-12T03:29:29.463Z",
+        "expires": "2035-03-28T01:07:35.665Z",
+        "ageDays": 8582,
+        "daysUntilExpiry": 3105,
+        "status": [
+          "client delete prohibited",
+          "client transfer prohibited",
+          "client update prohibited"
+        ],
+        "nameservers": [
+          "ns1.wordpress.org",
+          "ns2.wordpress.org",
+          "ns3.wordpress.org",
+          "... 1 more"
+        ],
+        "dnssec": false,
+        "source": "rdap"
+      },
+      "hosting": {
+        "ip": "66.6.42.252",
+        "provider": "WordPress.org",
+        "network": "WORDPRESS-ORG",
+        "country": null,
+        "cidr": "66.6.42.0/24"
+      },
+      "ssl": {
+        "valid": true,
+        "error": null,
+        "subject": "wordpress.org",
+        "issuer": "Let's Encrypt",
+        "validFrom": "2026-09-23T19:43:58+00:00",
+        "validTo": "2026-12-22T19:43:57+00:00",
+        "daysUntilExpiry": 88,
+        "sans": [
+          "*.wordpress.org",
+          "wordpress.org"
+        ],
+        "sanCount": 2,
+        "tlsVersion": "TLSv1.3",
+        "cipher": "TLS_AES_128_GCM_SHA256"
+      },
+      "technologies": [
+        {
+          "name": "WordPress",
+          "version": "7.2",
+          "confidence": 100,
+          "detectedVia": [
+            "website"
+          ],
+          "categories": [
+            "CMS",
+            "Blogs"
+          ],
+          "website": "https://wordpress.org"
+        },
+        {
+          "name": "MySQL",
+          "version": null,
+          "confidence": 100,
+          "detectedVia": [
+            "implied"
+          ],
+          "categories": [
+            "Databases"
+          ],
+          "website": "https://mysql.com"
+        },
+        {
+          "name": "Google Font API",
+          "version": null,
+          "confidence": 100,
+          "detectedVia": [
+            "website"
+          ],
+          "categories": [
+            "Font scripts"
+          ],
+          "website": "https://fonts.google.com/"
+        },
+        "... 10 more"
+      ],
+      "technologyNames": [
+        "WordPress",
+        "MySQL",
+        "Google Font API",
+        "... 10 more"
+      ],
+      "technologiesByCategory": {
+        "Blogs": [
+          "WordPress"
+        ],
+        "CMS": [
+          "WordPress"
+        ],
+        "Databases": [
+          "MySQL"
+        ],
+        "Editors": [
+          "Gutenberg"
+        ],
+        "Font scripts": [
+          "Google Font API"
+        ],
+        "Miscellaneous": [
+          "Open Graph",
+          "RSS"
+        ],
+        "Page builders": [
+          "WordPress Block Editor",
+          "WordPress Site Editor"
+        ],
+        "Performance": [
+          "Priority Hints"
+        ],
+        "Programming languages": [
+          "PHP"
+        ],
+        "Reverse proxies": [
+          "Nginx"
+        ],
+        "Security": [
+          "HSTS"
+        ],
+        "Tag managers": [
+          "Google Tag Manager"
+        ],
+        "Web servers": [
+          "Nginx"
+        ],
+        "WordPress plugins": [
+          "Gutenberg"
+        ]
+      },
+      "seo": {
+        "title": "Blog Tool, Publishing Platform, and CMS – WordPress.org",
+        "titleLength": 55,
+        "metaDescription": "Open source software which you can use to easily create a beautiful website, blog, or app.",
+        "metaDescriptionLength": 90,
+        "h1Count": 1,
+        "h1": "Meet WordPress",
+        "headingCounts": {
+          "h2": 10,
+          "h3": 0
+        },
+        "canonicalUrl": "https://wordpress.org/",
+        "indexable": true,
+        "language": "en-US",
+        "mobileViewport": true,
+        "openGraph": {
+          "title": "Blog Tool, Publishing Platform, and CMS - WordPress.org",
+          "description": "Open source software which you can use to easily create a beautiful website, blog, or app.",
+          "image": "https://wordpress.org/files/2024/04/wordpress-homepage-ogimage-202404.png"
+        },
+        "twitterCard": "summary_large_image",
+        "structuredDataTypes": [
+          "Organization",
+          "WebPage",
+          "WebSite"
+        ],
+        "hreflangCount": 157,
+        "images": 18,
+        "imagesMissingAlt": 9,
+        "links": {
+          "internal": 46,
+          "external": 33
+        },
+        "favicon": true,
+        "robotsTxt": {
+          "exists": true,
+          "blocksAll": false,
+          "sitemaps": [
+            "https://wordpress.org/sitemap.xml",
+            "https://wordpress.org/news-sitemap.xml",
+            "https://wordpress.org/themes/sitemap.xml",
+            "... 6 more"
+          ]
+        },
+        "sitemap": {
+          "exists": true,
+          "url": "https://wordpress.org/sitemap.xml",
+          "urlCount": null,
+          "childSitemaps": 3
+        },
+        "issues": [
+          "9 of 18 images missing alt text"
+        ],
+        "score": 92
+      },
+      "performance": {
+        "ttfbMs": 146,
+        "totalTimeMs": 152,
+        "http3Advertised": false,
+        "htmlKb": 161.1,
+        "compression": "br",
+        "cacheControl": null,
+        "scripts": {
+          "external": 5,
+          "inline": 12,
+          "renderBlocking": 0,
+          "thirdPartyDomains": 1
+        },
+        "stylesheets": 9,
+        "images": 18,
+        "issues": []
+      },
+      "security": {
+        "score": 78,
+        "grade": "B",
+        "checks": {
+          "validCertificate": true,
+          "modernTls": true,
+          "tls13": true,
+          "certificateNotExpiringSoon": true,
+          "httpsRedirect": true,
+          "hsts": true,
+          "contentSecurityPolicy": false,
+          "clickjackingProtection": true,
+          "noSniff": false,
+          "referrerPolicy": false,
+          "spf": true,
+          "dmarcEnforced": true,
+          "caa": true,
+          "dnssec": false
+        }
+      },
+      "status": "ok",
+      "errors": {},
+      "alerts": []
+    },
+    {
+      "input": "apify.com",
+      "host": "apify.com",
+      "domain": "apify.com",
+      "http": {
+        "finalUrl": "https://apify.com/",
+        "statusCode": 200,
+        "redirects": [],
+        "httpsOnly": true,
+        "responseTimeMs": 255,
+        "ttfbMs": 242,
+        "server": null,
+        "poweredBy": null,
+        "title": "Apify: Marketplace of ready-to-run tools for AI",
+        "description": "Thousands of tools to automate your business. Get real-time web data, track competitors, generate leads, and integrate your apps and AI agents.",
+        "language": "en",
+        "canonicalUrl": "https://apify.com",
+        "siteName": "Apify",
+        "socialProfiles": {
+          "linkedin": "http://linkedin.com/company/apify",
+          "x": "https://x.com/apify",
+          "github": "https://github.com/apify",
+          "tiktok": "https://www.tiktok.com/@apifytech"
+        },
+        "securityHeaders": {
+          "hsts": true,
+          "csp": true,
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": false,
+          "permissionsPolicy": false
+        },
+        "securityHeadersScore": "4/6"
+      },
+      "dns": {
+        "a": [
+          "3.170.42.100",
+          "3.170.42.109",
+          "3.170.42.68",
+          "... 1 more"
+        ],
+        "aaaa": [
+          "2600:9000:2870:5200:9:a03e:6540:93a1",
+          "2600:9000:2870:600:9:a03e:6540:93a1",
+          "2600:9000:2870:9a00:9:a03e:6540:93a1",
+          "... 5 more"
+        ],
+        "mx": [
+          "1 aspmx.l.google.com",
+          "10 aspmx2.googlemail.com",
+          "10 aspmx3.googlemail.com",
+          "... 2 more"
+        ],
+        "ns": [
+          "ns-1225.awsdns-25.org",
+          "ns-1928.awsdns-49.co.uk",
+          "ns-449.awsdns-56.com",
+          "... 1 more"
+        ],
+        "txt": [
+          "aisle-domain-verification-ymx7gd=j3J4hCmXHIc9R0RNQCfa8xdSf",
+          "google-site-verification=R_4agUZyHorQrO5QGFa6ZB_o-uDxq82NY-EteDUpPvo",
+          "google-site-verification=XU737OZxx6NvGd3NQK9MRt98qxRMjx3RByq-O0cy16I",
+          "... 8 more"
+        ],
+        "caa": [
+          "0 issue \"amazonaws.com\"",
+          "0 issue \"digicert.com\"",
+          "0 issue \"letsencrypt.org\"",
+          "... 2 more"
+        ],
+        "soa": "ns-839.awsdns-40.net. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400",
+        "cname": null,
+        "emailSecurity": {
+          "spf": "v=spf1 a mx include:_spf.google.com include:mailgun.org include:amazonses.com include:19497222.spf05.hubspotemail.net -all",
+          "dmarc": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:dmarc-reports@apify.com; ri=604800",
+          "dmarcPolicy": "reject"
+        },
+        "emailProvider": "Google Workspace"
+      },
+      "whois": {
+        "registrar": "Amazon Registrar, Inc.",
+        "registrarIanaId": "468",
+        "created": "2009-06-02T17:14:10Z",
+        "updated": "2026-05-16T16:53:04Z",
+        "expires": "2035-06-02T17:14:10Z",
+        "ageDays": 6323,
+        "daysUntilExpiry": 3172,
+        "status": [
+          "client transfer prohibited"
+        ],
+        "nameservers": [
+          "ns-1225.awsdns-25.org",
+          "ns-1928.awsdns-49.co.uk",
+          "ns-449.awsdns-56.com",
+          "... 1 more"
+        ],
+        "dnssec": true,
+        "source": "rdap"
+      },
+      "hosting": {
+        "ip": "3.170.42.100",
+        "provider": "Amazon.com, Inc.",
+        "network": "AMAZON-CF",
+        "country": null,
+        "cidr": "3.168.0.0/14"
+      },
+      "ssl": {
+        "valid": true,
+        "error": null,
+        "subject": "*.apify.com",
+        "issuer": "Amazon",
+        "validFrom": "2026-07-03T00:00:00+00:00",
+        "validTo": "2027-01-16T23:59:59+00:00",
+        "daysUntilExpiry": 113,
+        "sans": [
+          "*.apify.com",
+          "apifier.com",
+          "*.apifier.com",
+          "... 1 more"
+        ],
+        "sanCount": 4,
+        "tlsVersion": "TLSv1.3",
+        "cipher": "TLS_AES_128_GCM_SHA256"
+      },
+      "technologies": [
+        {
+          "name": "Leadfeeder",
+          "version": null,
+          "confidence": 100,
+          "detectedVia": [
+            "website"
+          ],
+          "categories": [
+            "Analytics"
+          ],
+          "website": "https://www.leadfeeder.com"
+        },
+        {
+          "name": "Linkedin Insight Tag",
+          "version": null,
+          "confidence": 100,
+          "detectedVia": [
+            "website"
+          ],
+          "categories": [
+            "Analytics"
+          ],
+          "website": "https://business.linkedin.com/marketing-solutions/insight-tag"
+        },
+        {
+          "name": "Mixpanel",
+          "version": null,
+          "confidence": 100,
+          "detectedVia": [
+            "dns"
+          ],
+          "categories": [
+            "Analytics"
+          ],
+          "website": "https://mixpanel.com"
+        },
+        "... 18 more"
+      ],
+      "technologyNames": [
+        "Leadfeeder",
+        "Linkedin Insight Tag",
+        "Mixpanel",
+        "... 18 more"
+      ],
+      "technologiesByCategory": {
+        "Analytics": [
+          "Leadfeeder",
+          "Linkedin Insight Tag",
+          "Mixpanel"
+        ],
+        "Artificial Intelligence": [
+          "OpenAI"
+        ],
+        "CDN": [
+          "Amazon CloudFront",
+          "Amazon S3"
+        ],
+        "Development": [
+          "Zapier",
+          "styled-components"
+        ],
+        "Email": [
+          "Amazon SES",
+          "Mailgun",
+          "Google Workspace"
+        ],
+        "Hosting": [
+          "Amazon Route 53"
+        ],
+        "JavaScript frameworks": [
+          "React",
+          "styled-components"
+        ],
+        "JavaScript libraries": [
+          "Swiper"
+        ],
+        "Marketing automation": [
+          "HubSpot"
+        ],
+        "Miscellaneous": [
+          "HTTP/3",
+          "Open Graph"
+        ],
+        "PaaS": [
+          "Amazon Web Services"
+        ],
+        "Performance": [
+          "Priority Hints"
+        ],
+        "Search engines": [
+          "Algolia"
+        ],
+        "Security": [
+          "HSTS"
+        ],
+        "Webmail": [
+          "Google Workspace"
+        ]
+      },
+      "seo": {
+        "title": "Apify: Marketplace of ready-to-run tools for AI",
+        "titleLength": 47,
+        "metaDescription": "Thousands of tools to automate your business. Get real-time web data, track competitors, generate leads, and integrate your apps and AI agents.",
+        "metaDescriptionLength": 143,
+        "h1Count": 1,
+        "h1": "74,708 tools for your AI",
+        "headingCounts": {
+          "h2": 11,
+          "h3": 20
+        },
+        "canonicalUrl": "https://apify.com",
+        "indexable": true,
+        "language": "en",
+        "mobileViewport": true,
+        "openGraph": {
+          "title": "Apify: Marketplace of ready-to-run tools for AI",
+          "description": "Thousands of tools to automate your business. Get real-time web data, track competitors, generate leads, and integrate your apps and AI agents.",
+          "image": "https://apify.com/og-image?title=Thousands+of+tools%0Afor+your+AI"
+        },
+        "twitterCard": "summary_large_image",
+        "structuredDataTypes": [
+          "Organization",
+          "SoftwareApplication",
+          "WebSite"
+        ],
+        "hreflangCount": 0,
+        "images": 78,
+        "imagesMissingAlt": 0,
+        "links": {
+          "internal": 78,
+          "external": 58
+        },
+        "favicon": true,
+        "robotsTxt": {
+          "exists": true,
+          "blocksAll": false,
+          "sitemaps": [
+            "https://apify.com/sitemap.xml"
+          ]
+        },
+        "sitemap": {
+          "exists": true,
+          "url": "https://apify.com/sitemap.xml",
+          "urlCount": null,
+          "childSitemaps": 15
+        },
+        "issues": [],
+        "score": 100
+      },
+      "performance": {
+        "ttfbMs": 242,
+        "totalTimeMs": 255,
+        "http3Advertised": true,
+        "htmlKb": 480.2,
+        "compression": "gzip",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "scripts": {
+          "external": 46,
+          "inline": 5,
+          "renderBlocking": 1,
+          "thirdPartyDomains": 0
+        },
+        "stylesheets": 3,
+        "images": 78,
+        "issues": []
+      },
+      "security": {
+        "score": 95,
+        "grade": "A",
+        "checks": {
+          "validCertificate": true,
+          "modernTls": true,
+          "tls13": true,
+          "certificateNotExpiringSoon": true,
+          "httpsRedirect": true,
+          "hsts": true,
+          "contentSecurityPolicy": true,
+          "clickjackingProtection": true,
+          "noSniff": true,
+          "referrerPolicy": false,
+          "spf": true,
+          "dmarcEnforced": true,
+          "caa": true,
+          "dnssec": true
+        }
+      },
+      "status": "ok",
+      "errors": {},
+      "alerts": []
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "input": {
+    "domains": [
+      "wordpress.org",
+      "bbc.co.uk",
+      "https://www.apify.com/store",
+      "... 1 more"
+    ],
+    "includeSsl": true,
+    "alertDaysBeforeExpiry": 30,
+    "maxConcurrency": 10,
+    "failOnError": false
+  },
+  "items": [
+    {
+      "domain": "apify.com",
+      "input": "https://www.apify.com/store",
+      "status": "ok",
+      "registered": true,
+      "registrar": "Amazon Registrar, Inc.",
+      "createdDate": "2009-06-02T17:14:10Z",
+      "updatedDate": "2026-05-16T16:53:04Z",
+      "expiryDate": "2035-06-02T17:14:10Z",
+      "domainAgeDays": 6322,
+      "domainAgeYears": 17.3,
+      "daysUntilExpiry": 3173,
+      "registrationStatus": [
+        "client transfer prohibited"
+      ],
+      "nameservers": [
+        "ns-1225.awsdns-25.org",
+        "ns-1928.awsdns-49.co.uk",
+        "ns-449.awsdns-56.com",
+        "... 1 more"
+      ],
+      "dnssec": true,
+      "whoisSource": "rdap",
+      "ipAddresses": [
+        "3.170.42.100",
+        "3.170.42.109",
+        "3.170.42.68",
+        "... 1 more"
+      ],
+      "mxRecords": [
+        "1 aspmx.l.google.com",
+        "10 aspmx2.googlemail.com",
+        "10 aspmx3.googlemail.com",
+        "... 2 more"
+      ],
+      "emailProvider": "Google Workspace",
+      "spf": "v=spf1 a mx include:_spf.google.com include:mailgun.org include:amazonses.com include:19497222.spf05.hubspotemail.net -all",
+      "dmarcPolicy": "reject",
+      "sslValid": true,
+      "sslIssuer": "Amazon",
+      "sslExpiryDate": "2027-01-16T23:59:59+00:00",
+      "sslDaysUntilExpiry": 114,
+      "alerts": []
+    },
+    {
+      "domain": "this-domain-surely-does-not-exist-9x7q.com",
+      "input": "this-domain-surely-does-not-exist-9x7q.com",
+      "status": "ok",
+      "registered": false,
+      "registrar": null,
+      "createdDate": null,
+      "updatedDate": null,
+      "expiryDate": null,
+      "domainAgeDays": null,
+      "domainAgeYears": null,
+      "daysUntilExpiry": null,
+      "registrationStatus": null,
+      "nameservers": null,
+      "dnssec": null,
+      "whoisSource": null,
+      "ipAddresses": null,
+      "mxRecords": null,
+      "emailProvider": null,
+      "spf": null,
+      "dmarcPolicy": null,
+      "alerts": [
+        "Domain is not registered"
+      ]
+    },
+    {
+      "domain": "wordpress.org",
+      "input": "wordpress.org",
+      "status": "ok",
+      "registered": true,
+      "registrar": "MarkMonitor Inc.",
+      "createdDate": "2003-03-28T01:07:35.665Z",
+      "updatedDate": "2026-08-12T03:29:29.463Z",
+      "expiryDate": "2035-03-28T01:07:35.665Z",
+      "domainAgeDays": 8581,
+      "domainAgeYears": 23.5,
+      "daysUntilExpiry": 3106,
+      "registrationStatus": [
+        "client delete prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "nameservers": [
+        "ns1.wordpress.org",
+        "ns2.wordpress.org",
+        "ns3.wordpress.org",
+        "... 1 more"
+      ],
+      "dnssec": false,
+      "whoisSource": "rdap",
+      "ipAddresses": [
+        "66.6.42.252"
+      ],
+      "mxRecords": [
+        "10 smtp1-dca.wordpress.org",
+        "10 smtp2-dca.wordpress.org"
+      ],
+      "emailProvider": "Self-hosted / other",
+      "spf": "v=spf1 ip4:66.6.42.0/24 ip4:66.155.40.0/24 include:helpscoutemail.com -all",
+      "dmarcPolicy": "reject",
+      "sslValid": true,
+      "sslIssuer": "Let's Encrypt",
+      "sslExpiryDate": "2026-12-22T19:43:57+00:00",
+      "sslDaysUntilExpiry": 89,
+      "alerts": []
+    },
+    {
+      "domain": "bbc.co.uk",
+      "input": "bbc.co.uk",
+      "status": "ok",
+      "registered": true,
+      "registrar": "British Broadcasting Corporation",
+      "createdDate": "1994-12-13T03:49:48Z",
+      "updatedDate": "2025-10-29T03:51:11.009091Z",
+      "expiryDate": "2034-12-13T03:49:48Z",
+      "domainAgeDays": 11608,
+      "domainAgeYears": 31.8,
+      "daysUntilExpiry": 3001,
+      "registrationStatus": [
+        "server update prohibited",
+        "server transfer prohibited",
+        "server delete prohibited"
+      ],
+      "nameservers": [
+        "ddns0.bbc.co.uk",
+        "ddns0.bbc.com",
+        "ddns1.bbc.co.uk",
+        "... 5 more"
+      ],
+      "dnssec": false,
+      "whoisSource": "rdap",
+      "ipAddresses": [
+        "151.101.0.81",
+        "151.101.128.81",
+        "151.101.192.81",
+        "... 1 more"
+      ],
+      "mxRecords": [
+        "10 cluster1.eu.messagelabs.com",
+        "20 cluster1a.eu.messagelabs.com"
+      ],
+      "emailProvider": "Broadcom Email Security",
+      "spf": "v=spf1 ip4:212.58.224.0/19 ip4:132.185.0.0/16 +include:spf.sis.bbc.co.uk +include:spf.messagelabs.com ~all",
+      "dmarcPolicy": "reject",
+      "sslValid": true,
+      "sslIssuer": "GlobalSign nv-sa",
+      "sslExpiryDate": "2027-01-24T05:46:23+00:00",
+      "sslDaysUntilExpiry": 121,
+      "alerts": []
+    }
+  ]
+}
