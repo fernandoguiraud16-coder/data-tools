@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Data Tools: clean web data for developers and AI agents">
+<meta property="og:description" content="Pay-per-use Apify Actors that turn search trends, news, documents, websites and audio into clean data.">
+<meta property="og:image" content="https://fernandoguiraud16-coder.github.io/data-tools/logo.png">
+<title>fguiraud Data Tools</title>
+<meta name="description" content="Pay-per-use Apify Actors that turn search trends, news, documents, websites and audio into clean data for AI agents and automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f4f5fb;
+    --surface: #ffffff;
+    --ink: #141833;
+    --muted: #585e7c;
+    --line: #dfe1ee;
+    --indigo: #4f52d9;
+    --teal: #0c8f81;
+    --code-bg: #141833;
+    --code-ink: #dfe2f5;
+    --code-key: #9ea1fb;
+    --code-str: #5eead4;
+    --hero-bg: #141833;
+    --hero-ink: #eef0fb;
+    --hero-muted: #a4a9c9;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0d1024;
+      --surface: #151936;
+      --ink: #e8eaf7;
+      --muted: #a0a5c4;
+      --line: #262b4d;
+      --indigo: #9396fb;
+      --teal: #3dd9c3;
+      --code-bg: #0a0c1c;
+      --hero-bg: #151936;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0d1024;
+    --surface: #151936;
+    --ink: #e8eaf7;
+    --muted: #a0a5c4;
+    --line: #262b4d;
+    --indigo: #9396fb;
+    --teal: #3dd9c3;
+    --code-bg: #0a0c1c;
+    --hero-bg: #151936;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.6 var(--body);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--indigo); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 24px; }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+  h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+  .eyebrow {
+    font: 500 0.75rem/1 var(--mono);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal);
+  }
+
+  /* Header */
+  header.top { background: var(--hero-bg); color: var(--hero-ink); }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 20px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; font: 600 1rem/1 var(--body); }
+  .brand svg { width: 36px; height: 36px; border-radius: 50%; flex: none; }
+  .brand small { display: block; font: 400 0.75rem/1.4 var(--mono); color: var(--hero-muted); }
+  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; font-size: 0.9rem; }
+  .nav-links a { color: var(--hero-muted); text-decoration: none; }
+  .nav-links a:hover { color: var(--hero-ink); }
+
+  /* Hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; padding-block: 56px 72px; }
+  .hero h1 { font-size: clamp(2.3rem, 5.4vw, 3.7rem); font-weight: 700; line-height: 1.02; letter-spacing: -0.035em; }
+  .hero h1 .raw { color: var(--hero-muted); font-weight: 500; }
+  .hero h1 .clean { background: linear-gradient(90deg, #5eead4, #9ea1fb); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p.lede { color: var(--hero-muted); font-size: 1.1rem; max-width: 34rem; margin: 20px 0 28px; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 20px; border-radius: 999px;
+    font: 600 0.95rem/1 var(--body); text-decoration: none;
+  }
+  .btn.primary { background: #5eead4; color: #0b1d1a; }
+  .btn.primary:hover { background: #99f6e4; }
+  .btn.ghost { color: var(--hero-ink); border: 1px solid #3a4070; }
+  .btn.ghost:hover { border-color: var(--hero-muted); }
+
+  /* Transform demo */
+  .demo { display: grid; gap: 10px; font: 400 0.82rem/1.55 var(--mono); }
+  .demo .pane { background: #0a0c1c; border: 1px solid #262b4d; border-radius: 14px; padding: 16px 18px; overflow-x: auto; }
+  .demo .label { display: flex; justify-content: space-between; color: var(--hero-muted); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+  .demo pre { margin: 0; color: #dfe2f5; white-space: pre; }
+  .demo .k { color: #9ea1fb; }
+  .demo .s { color: #5eead4; }
+  .demo .n { color: #fbbf77; }
+  .demo .arrow { justify-self: center; color: var(--hero-muted); font-size: 0.75rem; letter-spacing: 0.08em; }
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tabs button {
+    font: 500 0.75rem/1 var(--mono); color: var(--hero-muted);
+    background: transparent; border: 1px solid #262b4d; border-radius: 999px; padding: 7px 12px; cursor: pointer;
+  }
+  .tabs button[aria-selected="true"] { color: #0b1d1a; background: #5eead4; border-color: #5eead4; }
+
+  /* Proof strip */
+  .proof { border-bottom: 1px solid var(--line); background: var(--surface); }
+  .proof dl { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 0; padding-block: 28px; }
+  .proof div { display: grid; gap: 4px; }
+  .proof dt { font: 700 1.6rem/1 var(--display); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .proof dd { margin: 0; color: var(--muted); font-size: 0.88rem; }
+
+  section.block { padding-block: 72px; }
+  .section-head { display: grid; gap: 10px; margin-bottom: 36px; max-width: 40rem; }
+  .section-head p { color: var(--muted); margin: 0; }
+
+  /* Catalogue */
+  .group { display: grid; grid-template-columns: 200px 1fr; gap: 24px; padding-block: 28px; border-top: 1px solid var(--line); }
+  .group h3 { font-size: 1.15rem; font-weight: 700; }
+  .group > div:first-child p { color: var(--muted); font-size: 0.88rem; margin: 6px 0 0; }
+  .actors { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .actor {
+    display: grid; grid-template-rows: auto 1fr auto; gap: 10px;
+    padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    color: inherit; text-decoration: none; transition: border-color .15s, transform .15s;
+  }
+  .actor:hover { border-color: var(--indigo); transform: translateY(-2px); }
+  .actor h4 { margin: 0; font: 600 1rem/1.3 var(--body); }
+  .actor p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+  .price { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; font: 500 0.8rem/1.3 var(--mono); color: var(--teal); }
+  .price span:last-child { color: var(--muted); }
+
+  /* How billing works */
+  .billing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .billing h3 { font-size: 1.1rem; margin-bottom: 8px; }
+  .billing p { margin: 0; color: var(--muted); }
+  .billing .tag { font: 500 0.75rem/1 var(--mono); color: var(--indigo); margin-bottom: 12px; display: block; }
+
+  /* MCP */
+  .mcp { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; }
+  .mcp p { color: var(--muted); }
+  .code {
+    background: var(--code-bg); color: var(--code-ink); border-radius: 14px; padding: 20px;
+    font: 400 0.85rem/1.6 var(--mono); overflow-x: auto;
+  }
+  .code .row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; color: #a4a9c9; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .code pre { margin: 0; white-space: pre; }
+  .code .k { color: var(--code-key); }
+  .code .s { color: var(--code-str); }
+  .copy {
+    font: 500 0.75rem/1 var(--mono); color: #dfe2f5; background: transparent;
+    border: 1px solid #3a4070; border-radius: 999px; padding: 6px 12px; cursor: pointer;
+  }
+  .copy:hover { border-color: #a4a9c9; }
+  .prompts { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; }
+  .prompts li { padding-left: 16px; border-left: 2px solid var(--teal); font-style: italic; }
+
+  /* Support + footer */
+  .support { background: var(--surface); border-block: 1px solid var(--line); }
+  .support .wrap { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; padding-block: 40px; }
+  .support p { margin: 6px 0 0; color: var(--muted); max-width: 36rem; }
+  .support .btn { background: var(--ink); color: var(--bg); }
+  footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+  @media (max-width: 860px) {
+    .hero, .mcp { grid-template-columns: 1fr; }
+    .group { grid-template-columns: 1fr; gap: 16px; }
+    .billing { grid-template-columns: 1fr; gap: 24px; }
+    .proof dl { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding-inline: 16px; }
+    .actors { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .actor { transition: none; }
+    .actor:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="https://apify.com/fguiraud">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" fill="#141833"/>
+          <g fill="#8e90f4">
+            <circle cx="14" cy="23" r="2.2"/><circle cx="19" cy="28" r="1.7"/><circle cx="13" cy="32" r="1.9"/>
+            <circle cx="18" cy="36" r="2.4"/><circle cx="22" cy="41" r="1.6"/><circle cx="14" cy="42" r="2"/>
+            <circle cx="23" cy="24" r="1.8"/><circle cx="24" cy="32" r="1.5"/>
+          </g>
+          <path d="M28 25 L33 32 L28 39" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <g stroke-linecap="round" stroke-width="3.2">
+            <path d="M37 25.5 H53" stroke="#14b8a6"/><path d="M37 30 H50" stroke="#fff"/>
+            <path d="M37 34.5 H52" stroke="#14b8a6"/><path d="M37 39 H48" stroke="#fff"/>
+          </g>
+        </svg>
+        <span>Data Tools<small>apify.com/fguiraud</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#actors">Actors</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#agents">AI agents</a>
+        <a href="#support">Support</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Pay-per-use tools on Apify</p>
+        <h1><span class="raw">Messy web in.</span><br><span class="clean">Clean data out.</span></h1>
+        <p class="lede">Eight Actors that turn search trends, news, documents, websites and audio into structured JSON, Markdown and tables. Ready for RAG pipelines, AI agents and automation. You pay only for results.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#actors">Browse the Actors</a>
+          <a class="btn ghost" href="https://apify.com/fguiraud">Apify profile</a>
+        </div>
+      </div>
+
+      <div class="demo" aria-label="Example input and output">
+        <div class="tabs" role="tablist" aria-label="Example">
+          <button type="button" role="tab" id="tab-trends" aria-selected="true" data-ex="trends">Trends</button>
+          <button type="button" role="tab" id="tab-news" aria-selected="false" data-ex="news">News</button>
+          <button type="button" role="tab" id="tab-docs" aria-selected="false" data-ex="docs">Documents</button>
+          <button type="button" role="tab" id="tab-domains" aria-selected="false" data-ex="domains">Domains</button>
+        </div>
+        <div class="pane">
+          <div class="label"><span>Input</span><span id="ex-actor">google-trends-scraper</span></div>
+          <pre id="ex-in"></pre>
+        </div>
+        <div class="arrow" aria-hidden="true">▼ one run</div>
+        <div class="pane">
+          <div class="label"><span>Dataset item · sample values</span><span id="ex-price">$0.002 per term</span></div>
+          <pre id="ex-out"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="proof" aria-label="Track record">
+  <div class="wrap">
+    <dl>
+      <div><dt>8</dt><dd>public Actors on the Apify Store</dd></div>
+      <div><dt>&gt;99%</dt><dd>of runs succeed, as shown on the Store</dd></div>
+      <div><dt>Daily</dt><dd>cloud tests with real inputs</dd></div>
+      <div><dt>48 h</dt><dd>reply time on every issue</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="block" id="actors">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The Actors</p>
+      <h2>One tool per job, each priced per result</h2>
+      <p>Run them from the Apify Console, the API, a schedule or an AI agent. Prices are per item, plus Apify's small start fee.</p>
+    </div>
+
+    <div class="group">
+      <div><h3>Trends &amp; news</h3><p>What people search for, and the stories behind it.</p></div>
+      <div class="actors">
+        <a class="actor" href="https://apify.com/fguiraud/google-trends-scraper">
+          <h4>Google Trends Scraper</h4>
+          <p>Interest over time by country and city, rising related searches and what is trending today. Retries with a fresh IP for reliable runs.</p>
+          <div class="price"><span>$0.002 / term</span><span>per country</span></div>
+        </a>
+        <a class="actor" href="https://apify.com/fguiraud/google-news-scraper">
+          <h4>Google News Scraper + Full Article Text</h4>
+          <p>News by keyword, topic or country with the real article URL and the full text as Markdown. Only-new-articles mode for alerts.</p>
+          <div class="price"><span>$0.002 / article</span><span>+$0.002 full text</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div><h3>Documents</h3><p>Files your LLM can actually read.</p></div>
+      <div class="actors">
+        <a class="actor" href="https://apify.com/fguiraud/document-to-markdown-tables">
+          <h4>PDF to Markdown Extractor &amp; Document Parser</h4>
+          <p>PDF, Word, Excel, PowerPoint and scans to Markdown, tables and RAG chunks. Two-column layouts and OCR included.</p>
+          <div class="price"><span>$0.003 / document</span><span>OCR $0.01 / page</span></div>
+        </a>
+        <a class="actor" href="https://apify.com/fguiraud/pdf-table-extractor">
+          <h4>PDF Table Extractor</h4>
+          <p>Every table in a PDF to an Excel workbook with one sheet per table, plus CSV and JSON.</p>
+          <div class="price"><span>$0.003 / document</span><span></span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div><h3>Websites &amp; domains</h3><p>Who runs a site and what it is built with.</p></div>
+      <div class="actors">
+        <a class="actor" href="https://apify.com/fguiraud/website-tech-dns-whois-ssl">
+          <h4>Tech Stack Detector &amp; WHOIS, SSL Checker</h4>
+          <p>7,000+ technologies, WHOIS, DNS, email provider, SSL, hosting, security grade and SEO audit in one row per domain.</p>
+          <div class="price"><span>$0.004 / domain</span><span></span></div>
+        </a>
+        <a class="actor" href="https://apify.com/fguiraud/bulk-whois-domain-lookup">
+          <h4>Bulk WHOIS Domain Lookup</h4>
+          <p>Domain age, expiry date, registrar and availability for long lists of domains.</p>
+          <div class="price"><span>$0.002 / domain</span><span></span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div><h3>Audio &amp; podcasts</h3><p>Speech to searchable text.</p></div>
+      <div class="actors">
+        <a class="actor" href="https://apify.com/fguiraud/audio-video-transcriber">
+          <h4>Audio &amp; Video to Text Transcription</h4>
+          <p>Whisper transcription in 99 languages with SRT and VTT subtitles. Files with no speech are not charged.</p>
+          <div class="price"><span>$0.006 / minute</span><span>base model</span></div>
+        </a>
+        <a class="actor" href="https://apify.com/fguiraud/podcast-transcript-scraper">
+          <h4>Podcast Transcript Scraper</h4>
+          <p>Any podcast by name, Apple link or RSS feed to text. Schedule it to transcribe only new episodes.</p>
+          <div class="price"><span>$0.006 / minute</span><span>base model</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="pricing" style="padding-top: 0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How billing works</p>
+      <h2>You pay for results, not for attempts</h2>
+    </div>
+    <div class="billing">
+      <div>
+        <span class="tag">no-data → $0</span>
+        <h3>Failures are free</h3>
+        <p>Items that fail, return no data or have no speech are never charged. A Trends term with too little search volume costs nothing.</p>
+      </div>
+      <div>
+        <span class="tag">Max cost per run</span>
+        <h3>Set a spending cap</h3>
+        <p>Give each run a maximum cost. The Actor stops cleanly at that limit and keeps everything it already delivered.</p>
+      </div>
+      <div>
+        <span class="tag">RESUME_STATE</span>
+        <h3>Never charged twice</h3>
+        <p>If the platform restarts a long run, finished items are skipped, so you never pay for the same result again.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="agents" style="padding-top: 0">
+  <div class="wrap mcp">
+    <div>
+      <p class="eyebrow">For AI agents</p>
+      <h2>Give Claude, Cursor or any MCP client these tools</h2>
+      <p>Every Actor is available through the Apify MCP server. Add the server URL to your client and ask in plain language.</p>
+      <ul class="prompts">
+        <li>Is interest in heat pumps growing in Germany? Show the last 5 years.</li>
+        <li>Find this week's news about Tesla's robotaxi and summarize it.</li>
+        <li>Extract the tables from this PDF into a spreadsheet.</li>
+      </ul>
+    </div>
+    <div class="code">
+      <div class="row"><span>MCP server URL</span><button class="copy" type="button" id="copy-mcp">Copy</button></div>
+      <pre id="mcp-url"><span class="s">https://mcp.apify.com?tools=fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/document-to-markdown-tables</span></pre>
+    </div>
+  </div>
+</section>
+
+<section class="support" id="support">
+  <div class="wrap">
+    <div>
+      <h2>Need a feature or found a bug?</h2>
+      <p>Open an issue on the Actor's page in the Apify Store. Every issue gets a reply within 48 hours, and fixes ship as new builds.</p>
+    </div>
+    <a class="btn" href="https://apify.com/fguiraud">Go to the Apify Store</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Data Tools · Actors published on the Apify Store as fguiraud</span>
+    <span>Google Trends and Google News are trademarks of Google LLC. These tools are not affiliated with Google.</span>
+  </div>
+</footer>
+
+<script>
+  const examples = {
+    trends: {
+      actor: "google-trends-scraper", price: "$0.002 per term",
+      input: { searchTerms: ["heat pump"], geo: ["DE"], timeframe: "today 5-y" },
+      output: { terms: ["heat pump"], geo: "DE", summary: { "heat pump": { trend: "rising", peak: 100, peakDate: "2026-01-11", changePercent: 38 } }, relatedQueries: { "heat pump": { rising: [{ query: "heat pump subsidy", growthPercent: 250 }] } } }
+    },
+    news: {
+      actor: "google-news-scraper", price: "$0.004 with full text",
+      input: { queries: ["electric vehicles"], timeRange: "1d", maxArticlesPerQuery: 10 },
+      output: { title: "EV sales climb as prices fall", source: "Example Times", url: "https://news.example.com/ev-sales", publishedAt: "2026-09-25T14:02:00Z", fullTextStatus: "ok", wordCount: 812, text: "# EV sales climb as prices fall\n\nSales rose..." }
+    },
+    docs: {
+      actor: "document-to-markdown-tables", price: "$0.003 per document",
+      input: { sources: [{ url: "https://example.com/report.pdf" }], outputs: ["markdown", "tables"] },
+      output: { source: "https://example.com/report.pdf", fileType: "pdf", tables: [{ index: 0, page: 4, header: ["Year", "Revenue"], rows: [["2025", "1.2M"]] }], markdown: "## Results\n\n| Year | Revenue |..." }
+    },
+    domains: {
+      actor: "website-tech-dns-whois-ssl", price: "$0.004 per domain",
+      input: { domains: ["example.com"] },
+      output: { domain: "example.com", technologyNames: ["Nginx", "React"], whois: { registrar: "Example Registrar", ageDays: 9870 }, ssl: { valid: true, daysUntilExpiry: 212 }, security: { grade: "A" } }
+    }
+  };
+
+  function highlight(obj) {
+    const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    return esc(JSON.stringify(obj, null, 2))
+      .replace(/"([^"]+)":/g, '<span class="k">"$1"</span>:')
+      .replace(/: "([^"]*)"/g, ': <span class="s">"$1"</span>')
+      .replace(/(\n\s+)"([^"]*)"(,?)(?=\n)/g, '$1<span class="s">"$2"</span>$3')
+      .replace(/: (-?\d+(\.\d+)?)/g, ': <span class="n">$1</span>');
+  }
+
+  function show(key) {
+    const ex = examples[key];
+    document.getElementById("ex-actor").textContent = ex.actor;
+    document.getElementById("ex-price").textContent = ex.price;
+    document.getElementById("ex-in").innerHTML = highlight(ex.input);
+    document.getElementById("ex-out").innerHTML = highlight(ex.output);
+    document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.ex === key)));
+  }
+
+  document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => show(b.dataset.ex)));
+  show("trends");
+
+  document.getElementById("copy-mcp").addEventListener("click", async e => {
+    const btn = e.currentTarget;
+    const text = document.getElementById("mcp-url").textContent;
+    try {
+      await navigator.clipboard.writeText(text);
+      btn.textContent = "Copied";
+    } catch {
+      const range = document.createRange();
+      range.selectNodeContents(document.getElementById("mcp-url"));
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      btn.textContent = "Selected";
+    }
+    setTimeout(() => { btn.textContent = "Copy"; }, 1800);
+  });
+</script>
+
+</body>
+</html>
