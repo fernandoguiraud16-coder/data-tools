@@ -1,6 +1,6 @@
 # Data Tools: clean web data for developers and AI agents
 
-Ready-to-run Python examples for ten pay-per-use [Apify](https://apify.com/fguiraud) Actors that turn **search trends, news, competitor ads, documents, websites, YouTube videos and audio** into clean JSON, Markdown, CSV and Excel.
+Ready-to-run Python examples for pay-per-use [Apify](https://apify.com/fguiraud) Actors that turn **search trends, news, competitor ads, documents, websites, YouTube videos and audio** into clean JSON, Markdown, CSV and Excel.
 
 🌐 Website: **https://fernandoguiraud16-coder.github.io/data-tools/**
 
@@ -22,6 +22,13 @@ Each example is a single short script plus a `sample-output.json` from a real cl
 | [podcast-transcripts](examples/podcast-transcripts) | Transcribe only the new episodes of your favourite podcasts | [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper) |
 | [youtube-transcripts](examples/youtube-transcripts) | YouTube videos and Shorts to Markdown with timestamps, SRT or text, in any caption language | [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper) |
 | [mcp-agents](examples/mcp-agents) | Use all of these as tools in Claude, Cursor or any MCP client | Apify MCP server |
+
+Also in the family (same engine as Audio & Video Transcription, so the `audio-transcription` example works with them too):
+
+| Actor | What it does |
+|---|---|
+| [Video to Text Transcriber](https://apify.com/fguiraud/video-to-text-transcriber) | MP4, MOV and WEBM to transcripts and readable subtitles |
+| [SRT Subtitle Generator](https://apify.com/fguiraud/srt-subtitle-generator) | Broadcast-formatted SRT/VTT subtitles (42 characters, 2 lines) |
 
 ## Quick start
 
