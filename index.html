@@ -243,20 +243,21 @@
 
       <div class="demo" aria-label="Example input and output">
         <div class="tabs" role="tablist" aria-label="Example">
-          <button type="button" role="tab" id="tab-trends" aria-selected="true" data-ex="trends">Trends</button>
+          <button type="button" role="tab" id="tab-video" aria-selected="true" data-ex="video">TikTok</button>
+          <button type="button" role="tab" id="tab-trends" aria-selected="false" data-ex="trends">Trends</button>
           <button type="button" role="tab" id="tab-news" aria-selected="false" data-ex="news">News</button>
-          <button type="button" role="tab" id="tab-docs" aria-selected="false" data-ex="docs">Documents</button>
+          <button type="button" role="tab" id="tab-docs" aria-selected="false" data-ex="docs">PDF</button>
           <button type="button" role="tab" id="tab-domains" aria-selected="false" data-ex="domains">Domains</button>
           <button type="button" role="tab" id="tab-ads" aria-selected="false" data-ex="ads">Ads</button>
           <button type="button" role="tab" id="tab-youtube" aria-selected="false" data-ex="youtube">YouTube</button>
         </div>
         <div class="pane">
-          <div class="label"><span>Input</span><span id="ex-actor">google-trends-scraper</span></div>
+          <div class="label"><span>Input</span><span id="ex-actor">video-to-text-transcriber</span></div>
           <pre id="ex-in"></pre>
         </div>
         <div class="arrow" aria-hidden="true">▼ one run</div>
         <div class="pane">
-          <div class="label"><span>Dataset item · sample values</span><span id="ex-price">$0.002 per term</span></div>
+          <div class="label"><span>Dataset item · real output, shortened</span><span id="ex-price">$0.006 per minute</span></div>
           <pre id="ex-out"></pre>
         </div>
       </div>
@@ -268,7 +269,7 @@
   <div class="wrap">
     <dl>
       <div><dt>12</dt><dd>public Actors on the Apify Store</dd></div>
-      <div><dt>&gt;99%</dt><dd>of runs succeed, as shown on the Store</dd></div>
+      <div><dt>98%</dt><dd>of runs succeed (last 30 days, Apify Store stats)</dd></div>
       <div><dt>Daily</dt><dd>cloud tests with real inputs</dd></div>
       <div><dt>48 h</dt><dd>reply time on every issue</dd></div>
     </dl>
@@ -356,7 +357,7 @@
         </a>
         <a class="actor" href="https://apify.com/fguiraud/video-to-text-transcriber">
           <h4>Video to Text Transcriber</h4>
-          <p>MP4, MOV and WEBM files or Drive and Dropbox links to a full transcript and readable subtitles, in 99 languages.</p>
+          <p>TikTok, Instagram Reels, X and Facebook videos, whole TikTok accounts, or MP4/MOV files to text and subtitles, with author, views and likes.</p>
           <div class="price"><span>$0.006 / minute</span><span>base model</span></div>
         </a>
         <a class="actor" href="https://apify.com/fguiraud/srt-subtitle-generator">
@@ -402,14 +403,15 @@
       <h2>Give Claude, Cursor or any MCP client these tools</h2>
       <p>Every Actor is available through the Apify MCP server. Add the server URL to your client and ask in plain language. Setup for Claude Code, Claude Desktop and Cursor is in the <a href="https://github.com/fernandoguiraud16-coder/data-tools/tree/main/examples/mcp-agents">examples on GitHub</a>.</p>
       <ul class="prompts">
-        <li>Is interest in heat pumps growing in Germany? Show the last 5 years.</li>
+        <li>Transcribe the last 10 videos of @nasa on TikTok and list the topics.</li>
+        <li>Is interest in bitcoin growing in the US? Show the last 3 months.</li>
         <li>Find this week's news about Tesla's robotaxi and summarize it.</li>
         <li>Extract the tables from this PDF into a spreadsheet.</li>
       </ul>
     </div>
     <div class="code">
       <div class="row"><span>MCP server URL</span><button class="copy" type="button" id="copy-mcp">Copy</button></div>
-      <pre id="mcp-url"><span class="s">https://mcp.apify.com?tools=fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/google-ads-transparency-scraper,fguiraud/youtube-transcript-scraper,fguiraud/document-to-markdown-tables</span></pre>
+      <pre id="mcp-url"><span class="s">https://mcp.apify.com?tools=fguiraud/video-to-text-transcriber,fguiraud/audio-video-transcriber,fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/google-ads-transparency-scraper,fguiraud/youtube-transcript-scraper,fguiraud/document-to-markdown-tables</span></pre>
     </div>
   </div>
 </section>
@@ -427,31 +429,37 @@
 <footer>
   <div class="wrap">
     <span>Data Tools · Actors published on the Apify Store as fguiraud</span>
-    <span>Google Trends, Google News, Google Ads and YouTube are trademarks of Google LLC. These tools are not affiliated with Google.</span>
+    <span>Google Trends, Google News, Google Ads and YouTube are trademarks of Google LLC; TikTok, Instagram, X and Facebook belong to their respective owners. These tools are independent and not affiliated with any of them.</span>
   </div>
 </footer>
 
 <script>
+  // Real outputs from runs in September 2026 (shortened)
   const examples = {
+    video: {
+      actor: "video-to-text-transcriber", price: "$0.006 per minute",
+      input: { sources: [{ url: "https://www.tiktok.com/@tiktok/video/7689568478570843422" }] },
+      output: { source: "https://www.tiktok.com/@tiktok/video/7689568478570843422", language: "en", durationSeconds: 52.72, billedMinutes: 1, text: "You three look so good. I'm getting serious 2000 flashbacks...", video: { platform: "tiktok", author: "tiktok", uploadDate: "2026-09-25", views: 335000, likes: 4887 } }
+    },
     trends: {
       actor: "google-trends-scraper", price: "$0.002 per term",
-      input: { searchTerms: ["heat pump"], geo: ["DE"], timeframe: "today 5-y" },
-      output: { terms: ["heat pump"], geo: "DE", summary: { "heat pump": { trend: "rising", peak: 100, peakDate: "2026-01-11", changePercent: 38 } }, relatedQueries: { "heat pump": { rising: [{ query: "heat pump subsidy", growthPercent: 250 }] } } }
+      input: { searchTerms: ["bitcoin"], geo: ["US"], timeframe: "today 3-m" },
+      output: { terms: ["bitcoin"], geo: "US", summary: { bitcoin: { latest: 44, average: 58.4, peak: 100, peakDate: "2026-08-21T00:00:00Z", changePercent: -34.1, trend: "falling" } }, relatedQueries: { bitcoin: { rising: [{ query: "british man recovers lost bitcoin", label: "Breakout" }] } } }
     },
     news: {
       actor: "google-news-scraper", price: "$0.004 with full text",
       input: { queries: ["electric vehicles"], timeRange: "1d", maxArticlesPerQuery: 10 },
-      output: { title: "EV sales climb as prices fall", source: "Example Times", url: "https://news.example.com/ev-sales", publishedAt: "2026-09-25T14:02:00Z", fullTextStatus: "ok", wordCount: 812, text: "# EV sales climb as prices fall\n\nSales rose..." }
+      output: { title: "Electric Vehicle Owners Gather to Show Off Their EV's", source: "KPVI", publishedAt: "2026-09-29T13:39:00Z", url: "https://www.kpvi.com/news/local_news/electric-vehicle-owners-gather-to-show-off-their-evs/...", fullTextStatus: "ok", wordCount: 165, text: "The Portneuf Resource Council hosted the annual Electric Vehicle Show over the weekend..." }
     },
     docs: {
       actor: "document-to-markdown-tables", price: "$0.003 per document",
-      input: { sources: [{ url: "https://example.com/report.pdf" }], outputs: ["markdown", "tables"] },
-      output: { source: "https://example.com/report.pdf", fileType: "pdf", tables: [{ index: 0, page: 4, header: ["Year", "Revenue"], rows: [["2025", "1.2M"]] }], markdown: "## Results\n\n| Year | Revenue |..." }
+      input: { sources: [{ url: "https://raw.githubusercontent.com/jsvine/pdfplumber/stable/examples/pdfs/background-checks.pdf" }] },
+      output: { fileType: "pdf", stats: { pagesProcessed: 1, tables: 1, ocrPages: 0 }, markdown: "| NICS Firearm Background Checks November - 2015 | ... |\n| Alabama | 18,870 | 23,022 | 22,650 | ... |" }
     },
     domains: {
       actor: "website-tech-dns-whois-ssl", price: "$0.004 per domain",
-      input: { domains: ["example.com"] },
-      output: { domain: "example.com", technologyNames: ["Nginx", "React"], whois: { registrar: "Example Registrar", ageDays: 9870 }, ssl: { valid: true, daysUntilExpiry: 212 }, security: { grade: "A" } }
+      input: { domains: ["wordpress.org"] },
+      output: { domain: "wordpress.org", technologyNames: ["WordPress", "MySQL", "Google Font API", "Open Graph", "RSS"], whois: { registrar: "MarkMonitor Inc.", ageDays: 8586 }, ssl: { valid: true, daysUntilExpiry: 84 }, security: { grade: "B" } }
     },
     ads: {
       actor: "google-ads-transparency-scraper", price: "$0.0015 per ad",
@@ -484,7 +492,7 @@
   }
 
   document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => show(b.dataset.ex)));
-  show("trends");
+  show("video");
 
   document.getElementById("copy-mcp").addEventListener("click", async e => {
     const btn = e.currentTarget;
