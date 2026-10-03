@@ -2,6 +2,8 @@
 
 Search Google News in any country and language, and get the **real article URL** (not the news.google.com redirect) and the **full article text as Markdown**, through the [Google News Scraper](https://apify.com/fguiraud/google-news-scraper) Actor.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-google-news-scraper.png)
+
 ## Save articles as Markdown files
 
 ```bash

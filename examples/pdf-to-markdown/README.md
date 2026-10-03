@@ -2,6 +2,8 @@
 
 Convert documents into LLM-ready Markdown with real tables, or split them into RAG chunks with page numbers, through the [PDF to Markdown Extractor & Document Parser](https://apify.com/fguiraud/document-to-markdown-tables) Actor. No local dependencies: parsing and OCR run in the cloud.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-document-to-markdown-tables.png)
+
 Supported: PDF (native and scanned), DOCX, XLSX, XLS, PPTX, HTML, CSV and images. Google Drive, Dropbox and OneDrive share links work.
 
 ## Convert to Markdown files

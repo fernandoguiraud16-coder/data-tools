@@ -2,6 +2,8 @@
 
 Get the transcript of any YouTube video or Short as Markdown with timestamps, SRT subtitles or plain text, through the [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper) Actor. No YouTube API key, no blocked IPs to deal with.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-youtube-transcript-scraper.png)
+
 ## Save transcripts as Markdown files
 
 ```bash

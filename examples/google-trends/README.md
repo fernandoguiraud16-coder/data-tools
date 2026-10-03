@@ -2,6 +2,8 @@
 
 Get Google Trends data without an unofficial library that breaks: interest over time, by country and city, rising related searches and today's trending searches, through the [Google Trends Scraper](https://apify.com/fguiraud/google-trends-scraper) Actor.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-google-trends-scraper.png)
+
 ## Compare terms and export to CSV
 
 ```bash

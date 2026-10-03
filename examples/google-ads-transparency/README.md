@@ -2,6 +2,8 @@
 
 Get every Google ad (Search, Display and YouTube) of any competitor from the [Google Ads Transparency Center](https://adstransparency.google.com), with preview images and how long each ad has been running, through the [Google Ads Transparency Scraper](https://apify.com/fguiraud/google-ads-transparency-scraper) Actor.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-google-ads-transparency-scraper.png)
+
 ## Longest-running ads of your competitors
 
 ```bash

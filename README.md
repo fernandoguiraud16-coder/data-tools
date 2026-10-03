@@ -1,10 +1,12 @@
 # Data Tools: clean web data for developers and AI agents
 
-Ready-to-run Python examples for pay-per-use [Apify](https://apify.com/fguiraud) Actors that turn **search trends, news, competitor ads, documents, websites, YouTube videos and audio** into clean JSON, Markdown, CSV and Excel.
+Ready-to-run Python examples for pay-per-use [Apify](https://apify.com/fguiraud) Actors that turn **search trends, news, competitor ads, documents, websites, YouTube, TikTok and Instagram videos and audio** into clean JSON, Markdown, CSV and Excel.
 
 🌐 Website: **https://fernandoguiraud16-coder.github.io/data-tools/**
 
 Each example is a single short script plus a `sample-output.json` from a real cloud run, so you can see exactly what you get before running anything.
+
+![Sample output of the TikTok Transcript Scraper: real results from a cloud run](assets/outputs/output-tiktok-transcript-scraper.png)
 
 ## Examples
 
@@ -20,14 +22,16 @@ Each example is a single short script plus a `sample-output.json` from a real cl
 | [bulk-whois](examples/bulk-whois) | Find available and soon-to-expire domains in a list | [Bulk WHOIS Lookup](https://apify.com/fguiraud/bulk-whois-domain-lookup) |
 | [audio-transcription](examples/audio-transcription) | Audio or video to text and SRT subtitles, 99 languages | [Audio & Video Transcription](https://apify.com/fguiraud/audio-video-transcriber) |
 | [podcast-transcripts](examples/podcast-transcripts) | Transcribe only the new episodes of your favourite podcasts | [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper) |
-| [youtube-transcripts](examples/youtube-transcripts) | YouTube videos and Shorts to Markdown with timestamps, SRT or text, in any caption language | [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper) |
+| [youtube-transcripts](examples/youtube-transcripts) | YouTube videos, Shorts, whole channels and playlists to Markdown with timestamps, SRT or text | [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper) |
 | [mcp-agents](examples/mcp-agents) | Use all of these as tools in Claude, Cursor or any MCP client | Apify MCP server |
 
 Also in the family (same engine as Audio & Video Transcription, so the `audio-transcription` example works with them too):
 
 | Actor | What it does |
 |---|---|
-| [Video to Text Transcriber](https://apify.com/fguiraud/video-to-text-transcriber) | MP4, MOV and WEBM to transcripts and readable subtitles |
+| [Instagram Reels Transcript Scraper](https://apify.com/fguiraud/instagram-reels-transcript-scraper) | Instagram Reels to text with author, date, likes and comments ($0.009 per Reel) |
+| [TikTok Transcript Scraper](https://apify.com/fguiraud/tiktok-transcript-scraper) | TikTok videos or whole accounts to text with views and likes ($0.009 per video) |
+| [Video to Text Transcriber](https://apify.com/fguiraud/video-to-text-transcriber) | TikTok, Instagram, X, Facebook and MP4 links to transcripts and readable subtitles, per minute |
 | [SRT Subtitle Generator](https://apify.com/fguiraud/srt-subtitle-generator) | Broadcast-formatted SRT/VTT subtitles (42 characters, 2 lines) |
 
 ## Quick start

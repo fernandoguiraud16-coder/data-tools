@@ -2,6 +2,8 @@
 
 Check hundreds of domains at once with the [Bulk WHOIS Domain Lookup](https://apify.com/fguiraud/bulk-whois-domain-lookup) Actor: registrar, creation and expiry dates, domain age and whether the domain is registered at all. Uses RDAP with a WHOIS fallback, and works with country-code domains like `.co.uk`.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-bulk-whois-domain-lookup.png)
+
 ```bash
 python check_domains.py domains.txt --expiring-days 60
 ```

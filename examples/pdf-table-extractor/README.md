@@ -2,6 +2,8 @@
 
 Get every table in a PDF as an **Excel workbook with one sheet per table**, plus CSV and JSON, through the [PDF Table Extractor](https://apify.com/fguiraud/pdf-table-extractor) Actor. Scanned PDFs are handled with OCR.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-pdf-table-extractor.png)
+
 ```bash
 python tables_to_excel.py https://raw.githubusercontent.com/jsvine/pdfplumber/stable/examples/pdfs/background-checks.pdf
 ```

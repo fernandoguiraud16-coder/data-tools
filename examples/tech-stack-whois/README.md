@@ -2,6 +2,8 @@
 
 Turn a list of domains into a lead-enrichment CSV with the [Tech Stack Detector & WHOIS, SSL Checker](https://apify.com/fguiraud/website-tech-dns-whois-ssl) Actor: 7,000+ technologies, WHOIS/RDAP, DNS, email provider, hosting, SSL and a security grade. A BuiltWith / Wappalyzer alternative, priced per domain.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-website-tech-dns-whois-ssl.png)
+
 ```bash
 python enrich_leads.py domains.txt
 ```

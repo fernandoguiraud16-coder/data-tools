@@ -2,6 +2,8 @@
 
 Transcribe any podcast by **name**, **Apple Podcasts link** or **RSS feed** with the [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper) Actor. With `onlyNewEpisodes`, each run transcribes only episodes you haven't processed yet.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-podcast-transcript-scraper.png)
+
 ```bash
 python new_episodes.py "NPR News Now" "https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584"
 ```

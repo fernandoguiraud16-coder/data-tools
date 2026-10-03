@@ -2,6 +2,8 @@
 
 Speech to text and SRT/VTT subtitles in 99 languages with the [Audio & Video to Text Transcription](https://apify.com/fguiraud/audio-video-transcriber) Actor. It runs Whisper in the cloud, so you need no GPU and no local install.
 
+![Sample output: real results from a run of the Actor](../../assets/outputs/output-audio-video-transcriber.png)
+
 ```bash
 python transcribe.py https://example.com/interview.mp3 --model base --vocabulary "Apify, Kubernetes"
 ```
