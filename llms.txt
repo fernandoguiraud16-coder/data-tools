@@ -1,0 +1,36 @@
+# fguiraud Data Tools
+
+> Pay-per-use tools (Apify Actors) that turn videos, audio, documents, search trends, news, ads and websites into clean JSON, Markdown and subtitles. No API keys for the target sites. Built to be called by AI agents: every tool is an MCP server (https://mcp.apify.com/?tools=fguiraud/<actor>), accepts common field-name aliases (url, urls, startUrls...), and runs a sample when the input is empty. Agentic payments (x402, Skyfire) are enabled. Apify account or Apify token required for MCP.
+
+## Video, audio and subtitles
+
+- [Audio & Video to Text (Whisper)](https://apify.com/fguiraud/audio-video-transcriber): audio and video files to text, timestamped segments, SRT/VTT and RAG chunks; 99 languages; $0.006 per audio minute.
+- [Video to Text Transcriber](https://apify.com/fguiraud/video-to-text-transcriber): TikTok, Instagram Reels, X, Facebook and MP4 to text; optional speaker labels; $0.006 per minute.
+- [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper): any podcast by name, Apple Podcasts link or RSS feed; only new episodes on a schedule; speaker labels; $0.006 per minute.
+- [SRT Subtitle Generator](https://apify.com/fguiraud/srt-subtitle-generator): SRT and VTT subtitles for any video or audio; $0.006 per minute.
+- [Instagram Reels Transcript Scraper](https://apify.com/fguiraud/instagram-reels-transcript-scraper): reels by link or a creator's newest reels by @handle, no login; $0.009 per reel.
+- [TikTok Transcript Scraper](https://apify.com/fguiraud/tiktok-transcript-scraper): TikTok videos or whole accounts to text, with views and likes; $0.009 per video.
+- [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper): videos, channels and playlists to text, SRT or Markdown; Whisper fallback for videos without captions; $0.003 per transcript.
+
+## Documents
+
+- [PDF to Markdown & Document Parser](https://apify.com/fguiraud/document-to-markdown-tables): PDF, Word, Excel, PowerPoint and scans to Markdown, tables and RAG chunks, with OCR; $0.003 per document.
+- [PDF Text Extractor](https://apify.com/fguiraud/pdf-text-extractor): text per page and metadata from PDFs, OCR for scans; $0.003 per document.
+- [PDF Table Extractor](https://apify.com/fguiraud/pdf-table-extractor): every table from PDFs to Excel, CSV and JSON; $0.003 per document.
+
+## Search data
+
+- [Google Trends Scraper](https://apify.com/fguiraud/google-trends-scraper): interest over time and by region, related and rising queries, trending now; $0.002 per term.
+- [Google News Scraper + Full Article Text](https://apify.com/fguiraud/google-news-scraper): news search and topics with full article text in Markdown; $0.002 per article (+$0.002 with full text).
+- [Google Ads Transparency Scraper](https://apify.com/fguiraud/google-ads-transparency-scraper): every Google ad of an advertiser or domain (search, image, YouTube); $0.0015 per ad.
+
+## Websites and domains
+
+- [Tech Stack Detector & WHOIS, SSL Checker](https://apify.com/fguiraud/website-tech-dns-whois-ssl): technologies, WHOIS, DNS, SSL, hosting and SEO for lists of domains; $0.004 per domain.
+- [Bulk WHOIS Domain Lookup](https://apify.com/fguiraud/bulk-whois-domain-lookup): registrar, domain age, expiry and availability for domain lists; $0.002 per domain.
+
+## Guides and code
+
+- [Python examples](https://github.com/fernandoguiraud16-coder/data-tools/tree/main/examples): runnable scripts with real sample outputs for each tool.
+- [Use with AI agents (MCP)](https://fernandoguiraud16-coder.github.io/data-tools/examples/mcp-agents/)
+- [Agent skills](https://github.com/fernandoguiraud16-coder/data-tools/tree/main/skills): SKILL.md files that teach coding agents how to call each tool.

@@ -34,6 +34,12 @@ Also in the family (same engine as Audio & Video Transcription, so the `audio-tr
 | [Video to Text Transcriber](https://apify.com/fguiraud/video-to-text-transcriber) | TikTok, Instagram, X, Facebook and MP4 links to transcripts and readable subtitles, per minute |
 | [SRT Subtitle Generator](https://apify.com/fguiraud/srt-subtitle-generator) | Broadcast-formatted SRT/VTT subtitles (42 characters, 2 lines) |
 
+## For AI agents
+
+- **MCP:** every tool is listed in the [official MCP registry](https://registry.modelcontextprotocol.io) as `io.github.fernandoguiraud16-coder/<tool>` and served at `https://mcp.apify.com/?tools=fguiraud/<tool>`. See [`examples/mcp-agents`](examples/mcp-agents/).
+- **Agent skills:** `npx skills add fernandoguiraud16-coder/data-tools` installs [4 skills](skills/) for Claude Code, Codex, Cursor and other coding agents.
+- **[llms.txt](llms.txt):** a short index of all tools for LLMs.
+
 ## Quick start
 
 1. Create a free Apify account and copy your API token from **Console → Settings → API & Integrations**.
