@@ -94,7 +94,7 @@ Fields from a real run on 2026-09-29 (long values shortened):
 
 ## Pricing
 
-$0.003 per document + $0.001 per run. OCR pages $0.01 each.
+$0.003 per converted document plus a start fee of $0.001 per GB of run memory ($0.002 by default). OCR pages $0.01 each; failed documents are not billed.
 
 | Tool | Price |
 |---|---|
