@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fernandoguiraud16-coder.github.io/data-tools/sitemap.xml

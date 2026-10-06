@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.fernandoguiraud16-coder/instagram-reels-transcript-scraper",
+  "title": "Instagram Reels Transcript Scraper",
+  "description": "Transcripts of Instagram Reels or a creator's newest reels by @handle. No login.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/fguiraud/instagram-reels-transcript-scraper",
+  "repository": {
+    "url": "https://github.com/fernandoguiraud16-coder/data-tools",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fguiraud/instagram-reels-transcript-scraper"
+    }
+  ]
+}

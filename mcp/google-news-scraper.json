@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.fernandoguiraud16-coder/google-news-scraper",
+  "title": "Google News Scraper + Full Article Text",
+  "description": "Google News search and topics with the full article text in Markdown for LLMs.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/fguiraud/google-news-scraper",
+  "repository": {
+    "url": "https://github.com/fernandoguiraud16-coder/data-tools",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fguiraud/google-news-scraper"
+    }
+  ]
+}

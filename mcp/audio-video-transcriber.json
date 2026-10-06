@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.fernandoguiraud16-coder/audio-video-transcriber",
+  "title": "Audio & Video to Text (Whisper)",
+  "description": "Transcribe audio and video files to text, SRT and VTT subtitles in 99 languages with Whisper.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/fguiraud/audio-video-transcriber",
+  "repository": {
+    "url": "https://github.com/fernandoguiraud16-coder/data-tools",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fguiraud/audio-video-transcriber"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.fernandoguiraud16-coder/tiktok-transcript-scraper",
+  "title": "TikTok Transcript Scraper",
+  "description": "Transcripts of TikTok videos or whole accounts, with views, likes and dates.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/fguiraud/tiktok-transcript-scraper",
+  "repository": {
+    "url": "https://github.com/fernandoguiraud16-coder/data-tools",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fguiraud/tiktok-transcript-scraper"
+    }
+  ]
+}

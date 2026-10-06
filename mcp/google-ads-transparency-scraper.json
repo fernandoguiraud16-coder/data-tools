@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.fernandoguiraud16-coder/google-ads-transparency-scraper",
+  "title": "Google Ads Transparency Scraper",
+  "description": "Every Google ad of any advertiser or domain: text, image and YouTube ads.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/fguiraud/google-ads-transparency-scraper",
+  "repository": {
+    "url": "https://github.com/fernandoguiraud16-coder/data-tools",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fguiraud/google-ads-transparency-scraper"
+    }
+  ]
+}

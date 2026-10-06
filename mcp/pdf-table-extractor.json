@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.fernandoguiraud16-coder/pdf-table-extractor",
+  "title": "PDF Table Extractor",
+  "description": "Extract every table from PDFs and scans to Excel, CSV and JSON.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/fguiraud/pdf-table-extractor",
+  "repository": {
+    "url": "https://github.com/fernandoguiraud16-coder/data-tools",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fguiraud/pdf-table-extractor"
+    }
+  ]
+}

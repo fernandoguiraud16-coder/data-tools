@@ -1,0 +1,30 @@
+# Tells Bing, Yandex and other IndexNow search engines about the site's pages after each change.
+# Bing's index also feeds ChatGPT search and Copilot. The key file is at the site root.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for GitHub Pages to deploy
+        run: sleep 120
+      - name: Submit the sitemap URLs
+        run: |
+          python3 - <<'PY'
+          import json, re, urllib.request
+          key = '7c8a5068e39c4ca1a31ddda69303efd0'
+          base = 'https://fernandoguiraud16-coder.github.io/data-tools'
+          urls = re.findall(r'<loc>([^<]+)</loc>', open('sitemap.xml').read())
+          body = {'host': 'fernandoguiraud16-coder.github.io', 'key': key,
+                  'keyLocation': f'{base}/{key}.txt', 'urlList': urls}
+          req = urllib.request.Request('https://api.indexnow.org/indexnow', data=json.dumps(body).encode(),
+                                       headers={'Content-Type': 'application/json; charset=utf-8'})
+          with urllib.request.urlopen(req) as resp:
+              print('IndexNow:', resp.status, len(urls), 'URLs')
+          PY
