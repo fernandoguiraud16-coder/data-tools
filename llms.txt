@@ -31,6 +31,8 @@
 
 ## Guides and code
 
+- [Guides](https://fernandoguiraud16-coder.github.io/data-tools/guides/): one page per use case with Python code, real output and pricing.
+
 - [Python examples](https://github.com/fernandoguiraud16-coder/data-tools/tree/main/examples): runnable scripts with real sample outputs for each tool.
 - [Use with AI agents (MCP)](https://fernandoguiraud16-coder.github.io/data-tools/examples/mcp-agents/)
 - [Agent skills](https://github.com/fernandoguiraud16-coder/data-tools/tree/main/skills): SKILL.md files that teach coding agents how to call each tool.
