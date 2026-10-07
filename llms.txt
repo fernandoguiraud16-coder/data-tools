@@ -24,6 +24,11 @@
 - [Google News Scraper + Full Article Text](https://apify.com/fguiraud/google-news-scraper): news search and topics with full article text in Markdown; $0.002 per article (+$0.002 with full text).
 - [Google Ads Transparency Scraper](https://apify.com/fguiraud/google-ads-transparency-scraper): every Google ad of an advertiser or domain (search, image, YouTube); $0.0015 per ad.
 
+## Travel and jobs
+
+- [Google Hotels Scraper](https://apify.com/fguiraud/google-hotels-scraper): hotel prices per night and total with taxes for any city, dates and guests, star class, rating, reviews, amenities, review topics; up to ~150 hotels per city; daily price monitor; $0.0015 per hotel.
+- [Google Jobs Scraper](https://apify.com/fguiraud/google-jobs-scraper): job listings from LinkedIn, Indeed, ZipRecruiter and company sites via Google Jobs, salary ranges as numbers, highlights, descriptions, all apply links; only-new-jobs alerts; $0.003 per job.
+
 ## Websites and domains
 
 - [Tech Stack Detector & WHOIS, SSL Checker](https://apify.com/fguiraud/website-tech-dns-whois-ssl): technologies, WHOIS, DNS, SSL, hosting and SEO for lists of domains; $0.004 per domain.

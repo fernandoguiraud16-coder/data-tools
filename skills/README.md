@@ -12,3 +12,5 @@ npx skills add fernandoguiraud16-coder/data-tools
 | [apify-pdf-document-extraction](apify-pdf-document-extraction/SKILL.md) | PDFs and office documents to Markdown, text and tables, with OCR |
 | [apify-domain-whois-intel](apify-domain-whois-intel/SKILL.md) | Bulk WHOIS, DNS, SSL, hosting and tech stack of domains |
 | [apify-google-trends-news](apify-google-trends-news/SKILL.md) | Google Trends and Google News with full article text |
+| [apify-hotel-prices](apify-hotel-prices/SKILL.md) | Google Hotels prices, ratings and amenities for any dates; daily price monitor |
+| [apify-job-search](apify-job-search/SKILL.md) | Google Jobs listings with salaries and apply links; alerts for new jobs |

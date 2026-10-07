@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:title" content="Data Tools: clean web data for developers and AI agents">
-<meta property="og:description" content="Pay-per-use Apify Actors that turn search trends, news, ads, documents, websites, audio and video into clean data.">
+<meta property="og:description" content="Pay-per-use Apify Actors that turn search trends, news, ads, hotel prices, jobs, documents, websites, audio and video into clean data.">
 <meta property="og:image" content="https://fernandoguiraud16-coder.github.io/data-tools/logo.png">
 <title>fguiraud Data Tools</title>
-<meta name="description" content="Pay-per-use Apify Actors that turn search trends, news, ads, documents, websites, audio and video into clean data for AI agents and automation.">
+<meta name="description" content="Pay-per-use Apify Actors that turn search trends, news, ads, hotel prices, jobs, documents, websites, audio and video into clean data for AI agents and automation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -235,7 +235,7 @@
       <div>
         <p class="eyebrow">Pay-per-use tools on Apify</p>
         <h1><span class="raw">Messy web in.</span><br><span class="clean">Clean data out.</span></h1>
-        <p class="lede">Twelve Actors that turn search trends, news, competitor ads, documents, websites, audio and video into structured JSON, Markdown, tables and subtitles. Ready for RAG pipelines, AI agents and automation. You pay only for results.</p>
+        <p class="lede">Seventeen Actors that turn search trends, news, competitor ads, hotel prices, job listings, documents, websites, audio and video into structured JSON, Markdown, tables and subtitles. Ready for RAG pipelines, AI agents and automation. You pay only for results.</p>
         <div class="cta-row">
           <a class="btn primary" href="#actors">Browse the Actors</a>
           <a class="btn ghost" href="https://github.com/fernandoguiraud16-coder/data-tools/tree/main/examples">Python examples</a>
@@ -269,7 +269,7 @@
 <section class="proof" aria-label="Track record">
   <div class="wrap">
     <dl>
-      <div><dt>12</dt><dd>public Actors on the Apify Store</dd></div>
+      <div><dt>17</dt><dd>public Actors on the Apify Store</dd></div>
       <div><dt>98%</dt><dd>of runs succeed (last 30 days, Apify Store stats)</dd></div>
       <div><dt>Scheduled</dt><dd>cloud tests with real inputs, daily or every other day</dd></div>
       <div><dt>48 h</dt><dd>reply time on every issue</dd></div>
@@ -338,6 +338,21 @@
       </div>
     </div>
 
+    <div class="group">
+      <div><h3>Travel &amp; jobs</h3><p>Hotel prices for any dates and job listings from every board, ready to compare and monitor.</p></div>
+      <div class="actors">
+        <a class="actor" href="https://apify.com/fguiraud/google-hotels-scraper">
+          <h4>Google Hotels Scraper</h4>
+          <p>Price per night and total with taxes for any city, dates and guests, with star class, rating, reviews and amenities. Daily price monitor.</p>
+          <div class="price"><span>$0.0015 / hotel</span><span></span></div>
+        </a>
+        <a class="actor" href="https://apify.com/fguiraud/google-jobs-scraper">
+          <h4>Google Jobs Scraper</h4>
+          <p>Job listings from LinkedIn, Indeed and company sites via Google Jobs, with salary ranges as numbers and every apply link. Alerts for new jobs.</p>
+          <div class="price"><span>$0.003 / job</span><span></span></div>
+        </a>
+      </div>
+    </div>
     <div class="group">
       <div><h3>Video, audio &amp; podcasts</h3><p>Speech to searchable text and ready-to-publish subtitles.</p></div>
       <div class="actors">
@@ -413,7 +428,7 @@
     </div>
     <div class="code">
       <div class="row"><span>MCP server URL</span><button class="copy" type="button" id="copy-mcp">Copy</button></div>
-      <pre id="mcp-url"><span class="s">https://mcp.apify.com?tools=fguiraud/video-to-text-transcriber,fguiraud/audio-video-transcriber,fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/google-ads-transparency-scraper,fguiraud/youtube-transcript-scraper,fguiraud/document-to-markdown-tables</span></pre>
+      <pre id="mcp-url"><span class="s">https://mcp.apify.com?tools=fguiraud/video-to-text-transcriber,fguiraud/audio-video-transcriber,fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/google-ads-transparency-scraper,fguiraud/youtube-transcript-scraper,fguiraud/document-to-markdown-tables,fguiraud/google-hotels-scraper,fguiraud/google-jobs-scraper</span></pre>
     </div>
   </div>
 </section>

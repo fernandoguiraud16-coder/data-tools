@@ -23,6 +23,8 @@ Each example is a single short script plus a `sample-output.json` from a real cl
 | [audio-transcription](examples/audio-transcription) | Audio or video to text and SRT subtitles, 99 languages | [Audio & Video Transcription](https://apify.com/fguiraud/audio-video-transcriber) |
 | [podcast-transcripts](examples/podcast-transcripts) | Transcribe only the new episodes of your favourite podcasts | [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper) |
 | [youtube-transcripts](examples/youtube-transcripts) | YouTube videos, Shorts, whole channels and playlists to Markdown with timestamps, SRT or text | [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper) |
+| [Google Hotels guide](https://fernandoguiraud16-coder.github.io/data-tools/guides/google-hotels-api-python/) | Hotel prices per night and total stay for any city and dates, ratings, reviews, amenities; daily price monitor | [Google Hotels Scraper](https://apify.com/fguiraud/google-hotels-scraper) |
+| [Google Jobs guide](https://fernandoguiraud16-coder.github.io/data-tools/guides/google-jobs-api-python/) | Job listings from LinkedIn, Indeed and company sites with salary ranges and apply links; alerts for new jobs | [Google Jobs Scraper](https://apify.com/fguiraud/google-jobs-scraper) |
 | [mcp-agents](examples/mcp-agents) | Use all of these as tools in Claude, Cursor or any MCP client | Apify MCP server |
 
 Also in the family (same engine as Audio & Video Transcription, so the `audio-transcription` example works with them too):
@@ -37,7 +39,7 @@ Also in the family (same engine as Audio & Video Transcription, so the `audio-tr
 ## For AI agents
 
 - **MCP:** every tool is listed in the [official MCP registry](https://registry.modelcontextprotocol.io) as `io.github.fernandoguiraud16-coder/<tool>` and served at `https://mcp.apify.com/?tools=fguiraud/<tool>`. See [`examples/mcp-agents`](examples/mcp-agents/).
-- **Agent skills:** `npx skills add fernandoguiraud16-coder/data-tools` installs [4 skills](skills/) for Claude Code, Codex, Cursor and other coding agents.
+- **Agent skills:** `npx skills add fernandoguiraud16-coder/data-tools` installs [6 skills](skills/) for Claude Code, Codex, Cursor and other coding agents.
 - **[llms.txt](llms.txt):** a short index of all tools for LLMs.
 
 ## Quick start
