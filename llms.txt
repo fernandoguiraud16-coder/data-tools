@@ -31,7 +31,7 @@
 
 ## Websites and domains
 
-- [Tech Stack Detector & WHOIS, SSL Checker](https://apify.com/fguiraud/website-tech-dns-whois-ssl): technologies, WHOIS, DNS, SSL, hosting and SEO for lists of domains; $0.004 per domain.
+- [Tech Stack Detector](https://apify.com/fguiraud/website-tech-dns-whois-ssl): technologies, WHOIS, DNS, SSL, hosting and SEO for lists of domains; $0.004 per domain.
 - [Bulk WHOIS Domain Lookup](https://apify.com/fguiraud/bulk-whois-domain-lookup): registrar, domain age, expiry and availability for domain lists; $0.002 per domain.
 
 ## Guides and code

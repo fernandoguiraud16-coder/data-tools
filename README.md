@@ -18,7 +18,7 @@ Each example is a single short script plus a `sample-output.json` from a real cl
 | [trends-to-news](examples/trends-to-news) | Find the fastest rising searches on a topic and the news that explains them | Trends + News |
 | [pdf-to-markdown](examples/pdf-to-markdown) | PDF, Word, Excel, PowerPoint and scans to Markdown, or to RAG chunks in JSONL | [PDF to Markdown Extractor](https://apify.com/fguiraud/document-to-markdown-tables) |
 | [pdf-table-extractor](examples/pdf-table-extractor) | Every table in a PDF to an Excel workbook, one sheet per table | [PDF Table Extractor](https://apify.com/fguiraud/pdf-table-extractor) |
-| [tech-stack-whois](examples/tech-stack-whois) | Enrich a list of company domains: CMS, email provider, hosting, age, security grade | [Tech Stack Detector & WHOIS](https://apify.com/fguiraud/website-tech-dns-whois-ssl) |
+| [tech-stack-whois](examples/tech-stack-whois) | Enrich a list of company domains: CMS, email provider, hosting, age, security grade | [Tech Stack Detector](https://apify.com/fguiraud/website-tech-dns-whois-ssl) |
 | [bulk-whois](examples/bulk-whois) | Find available and soon-to-expire domains in a list | [Bulk WHOIS Lookup](https://apify.com/fguiraud/bulk-whois-domain-lookup) |
 | [audio-transcription](examples/audio-transcription) | Audio or video to text and SRT subtitles, 99 languages | [Audio & Video Transcription](https://apify.com/fguiraud/audio-video-transcriber) |
 | [podcast-transcripts](examples/podcast-transcripts) | Transcribe only the new episodes of your favourite podcasts | [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper) |
