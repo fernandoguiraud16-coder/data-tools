@@ -46,7 +46,7 @@ apify actors info "fguiraud/google-jobs-scraper" --input --json --user-agent fgu
 
 ## Workflow
 
-1. Build the input: `queries` (job titles or skills), `location`, `maxJobsPerQuery` (10 per Google search; up to ~50 combining related searches). Optional: `maxDaysOld`, `employmentTypes` (`full-time`, `part-time`, `contractor`, `internship`...), `remoteOnly`, `country` and `language` for other countries, `includeDescription: false` for smaller results.
+1. Build the input: `queries` (job titles or skills), `location`, `maxJobsPerQuery` (10 per Google search; up to ~50 combining related searches). Optional: `maxDaysOld`, `employmentTypes` (`full-time`, `part-time`, `contractor`, `internship`...), `remoteOnly`, `country` for other countries (write the search in the local language, e.g. "contador"), `includeDescription: false` for smaller results.
 2. Alerts: `onlyNewJobs: true` on a schedule returns only postings not delivered before.
 3. Run and fetch:
 
