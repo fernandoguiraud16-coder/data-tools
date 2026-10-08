@@ -1,6 +1,6 @@
 ---
 name: apify-video-audio-transcripts
-description: Transcribe video and audio to text with Apify Actors - YouTube videos, channels and playlists, TikTok videos and accounts, Instagram Reels and creators, podcasts by name or RSS feed, and any audio or video file (MP3, WAV, M4A, MP4...). Returns plain text, timestamped segments, SRT/VTT subtitles, Markdown or RAG chunks, with optional speaker labels and translation to English. Use when the user asks for a transcript, captions, subtitles, speech to text, "what does this video say", summarizing a video or podcast, or building a dataset of spoken content.
+description: Transcribe video and audio to text with Apify Actors - YouTube videos, channels, playlists and search results, TikTok videos and accounts, Instagram Reels and creators, podcasts by name or RSS feed, and any audio or video file (MP3, WAV, M4A, MP4...). Returns plain text, timestamped segments, SRT/VTT subtitles, Markdown or RAG chunks, with optional speaker labels and translation to English. Use when the user asks for a transcript, captions, subtitles, speech to text, "what does this video say", summarizing a video or podcast, or building a dataset of spoken content.
 author: Fernando Guiraud
 author_url: https://github.com/fernandoguiraud16-coder
 metadata:
@@ -37,7 +37,7 @@ Out of scope (the boundary):
 
 | User need | Actor ID | Price | Main input |
 |-----------|----------|-------|------------|
-| YouTube video, channel or playlist | `fguiraud/youtube-transcript-scraper` | $0.003 per transcript | `videos` (links or IDs), `channels` (@handle or playlist link) |
+| YouTube video, channel, playlist or search | `fguiraud/youtube-transcript-scraper` | $0.003 per transcript | `videos` (links or IDs), `channels` (@handle or playlist link), `searchQueries` (keywords; `sortBy`, `uploadDate`, `videoDuration`) |
 | TikTok video or account | `fguiraud/tiktok-transcript-scraper` | $0.009 per video | `sources` (links) or `profiles` (@handle) |
 | Instagram Reel or creator | `fguiraud/instagram-reels-transcript-scraper` | $0.009 per reel | `sources` (links) or `profiles` (@handle, newest 12 reels max) |
 | Podcast | `fguiraud/podcast-transcript-scraper` | $0.006 per minute | `podcastFeeds` (name, Apple Podcasts link or RSS URL) |
