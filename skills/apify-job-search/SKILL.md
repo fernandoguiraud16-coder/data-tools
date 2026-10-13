@@ -37,6 +37,7 @@ Out of scope (the boundary):
 | User need | Actor ID | Price |
 |-----------|----------|-------|
 | Job postings with salary, highlights and apply links; job alerts | `fguiraud/google-jobs-scraper` | $0.003 per job |
+| Same search, framed as "LinkedIn, Indeed and company-site jobs" (identical input and output) | `fguiraud/job-postings-aggregator` | $0.003 per job |
 
 ## Check the live input schema
 

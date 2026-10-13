@@ -108,3 +108,4 @@ Yes. It is an MCP server at `https://mcp.apify.com/?tools=fguiraud/google-jobs-s
 ## Related guides
 
 - [Google Hotels API for Python](https://fernandoguiraud16-coder.github.io/data-tools/guides/google-hotels-api-python/)
+- [LinkedIn and Indeed jobs in one search](https://fernandoguiraud16-coder.github.io/data-tools/guides/linkedin-indeed-jobs-api-python/)
