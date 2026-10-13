@@ -11,6 +11,8 @@
 - [Instagram Reels Transcript Scraper](https://apify.com/fguiraud/instagram-reels-transcript-scraper): reels by link or a creator's newest reels by @handle, no login; $0.009 per reel.
 - [TikTok Transcript Scraper](https://apify.com/fguiraud/tiktok-transcript-scraper): TikTok videos or whole accounts to text, with views and likes; $0.009 per video.
 - [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper): videos, channels, playlists and keyword searches to text, SRT or Markdown; Whisper fallback for videos without captions; $0.003 per transcript.
+- [YouTube Channel Transcripts](https://apify.com/fguiraud/youtube-channel-transcripts): every video of a channel or playlist as text, SRT or Markdown; only new videos on a schedule; $0.003 per transcript.
+- [YouTube Search Transcripts](https://apify.com/fguiraud/youtube-search-transcripts): transcripts of the top videos for a keyword, with date, length and sort filters; $0.003 per transcript.
 
 ## Documents
 
@@ -28,6 +30,7 @@
 
 - [Google Hotels Scraper](https://apify.com/fguiraud/google-hotels-scraper): hotel prices per night and total with taxes for any city, dates and guests, star class, rating, reviews, amenities, review topics; up to ~150 hotels per city; daily price monitor; $0.0015 per hotel.
 - [Google Jobs Scraper](https://apify.com/fguiraud/google-jobs-scraper): job listings from LinkedIn, Indeed, ZipRecruiter and company sites via Google Jobs, salary ranges as numbers, highlights, descriptions, all apply links; only-new-jobs alerts; $0.003 per job.
+- [Job Postings Aggregator](https://apify.com/fguiraud/job-postings-aggregator): jobs from LinkedIn, Indeed, Monster and company career sites via Google Jobs, with salary ranges and every apply link; $0.003 per job.
 
 ## Websites and domains
 
