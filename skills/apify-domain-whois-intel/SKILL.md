@@ -1,6 +1,6 @@
 ---
 name: apify-domain-whois-intel
-description: Look up domains and websites in bulk with Apify Actors - WHOIS/RDAP (registrar, creation and expiry dates, domain age, availability), DNS records (MX, SPF, DMARC, NS), SSL certificate expiry, hosting provider, technology stack (CMS, analytics, frameworks) and on-page SEO. Use when the user asks who owns or hosts a domain, when a domain expires, if a domain is available, how old a domain is, what technology a website uses, or to enrich a list of company domains.
+description: Look up domains and websites in bulk with Apify Actors - WHOIS/RDAP (registrar, creation and expiry dates, domain age, availability), DNS records (MX, SPF, DMARC, NS), SSL certificate expiry, hosting provider, technology stack (CMS, analytics, frameworks) and on-page SEO. Use when the user asks who owns or hosts a domain, when a domain expires, if a domain is available, how old a domain is, what technology a website uses, or to enrich a list of company domains, including finding company contact emails, phones and social profiles.
 author: Fernando Guiraud
 author_url: https://github.com/fernandoguiraud16-coder
 metadata:
@@ -38,6 +38,7 @@ Out of scope (the boundary):
 |-----------|----------|-------|
 | WHOIS only: registrar, age, expiry, availability (optional SSL) | `fguiraud/bulk-whois-domain-lookup` | $0.002 per domain |
 | Tech stack, DNS, SSL, hosting, HTTP, SEO, WHOIS | `fguiraud/website-tech-dns-whois-ssl` | $0.004 per domain |
+| Company contacts: role emails (info@, sales@), phones, address, contact page, social profiles (no personal emails) | `fguiraud/website-contact-scraper` | $0.003 per website with contacts |
 
 Input: `domains` (list of domains or URLs). A link to a public Google Sheet or CSV works through `domainsFromUrl`.
 

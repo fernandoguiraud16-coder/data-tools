@@ -36,6 +36,7 @@
 
 - [Tech Stack Detector & WHOIS, SSL Checker](https://apify.com/fguiraud/website-tech-dns-whois-ssl): technologies, WHOIS, DNS, SSL, hosting and SEO for lists of domains; $0.004 per domain.
 - [Bulk WHOIS Domain Lookup](https://apify.com/fguiraud/bulk-whois-domain-lookup): registrar, domain age, expiry and availability for domain lists; $0.002 per domain.
+- [Website Contact Scraper](https://apify.com/fguiraud/website-contact-scraper): company role emails (info@, sales@, support@), phones, address, contact page and social profiles from lists of websites; business contacts only, no personal emails; $0.003 per website with contacts.
 
 ## Guides and code
 
