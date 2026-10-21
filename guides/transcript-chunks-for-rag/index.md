@@ -40,15 +40,15 @@ No Python? Open the [Actor page](https://apify.com/fguiraud/audio-video-transcri
 
 ## Real output
 
-Fields from a real run on 2026-09-30 (long values shortened):
+Fields from a real run on 2026-10-19 (long values shortened):
 
 ```json
 {
-  "source": "https://github.com/openai/whisper/raw/main/tests/jfk.flac",
+  "source": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3",
   "status": "ok",
   "language": "en",
-  "durationSeconds": 11,
-  "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country"
+  "durationSeconds": 157.88,
+  "text": "This is a Librevox recording. All Librevox recordings are in the public domain. For more information or to volunteer, please visit Librevox.org.\n\nThe Gettysburg Address by Abraham Lincoln, November 19th, 1863.\n\nFour scor..."
 }
 ```
 

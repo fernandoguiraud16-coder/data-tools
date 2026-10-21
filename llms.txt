@@ -4,7 +4,7 @@
 
 ## Video, audio and subtitles
 
-- [Audio & Video to Text (Whisper)](https://apify.com/fguiraud/audio-video-transcriber): audio and video files to text, timestamped segments, SRT/VTT and RAG chunks; 99 languages; $0.006 per audio minute.
+- [Audio & Video to Text (Whisper)](https://apify.com/fguiraud/audio-video-transcriber): audio and video files, TikTok/Instagram/X/Facebook links and player pages (SoundCloud, Apple Podcasts) to text, sentence-level segments, SRT/VTT, RAG chunks and Word/PDF documents; optional speaker labels (+$0.003/min); 99 languages; $0.006 per audio minute.
 - [Video to Text Transcriber](https://apify.com/fguiraud/video-to-text-transcriber): TikTok, Instagram Reels, X, Facebook and MP4 to text; optional speaker labels; $0.006 per minute.
 - [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper): any podcast by name, Apple Podcasts link or RSS feed; only new episodes on a schedule; speaker labels; $0.006 per minute.
 - [SRT Subtitle Generator](https://apify.com/fguiraud/srt-subtitle-generator): SRT and VTT subtitles for any video or audio; $0.006 per minute.

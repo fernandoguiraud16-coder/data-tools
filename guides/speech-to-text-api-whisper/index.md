@@ -1,6 +1,6 @@
 ---
 title: "Speech to Text API with Whisper, no OpenAI key (pay per minute)"
-description: "Transcribe MP3, WAV, M4A and MP4 files to text, timestamps and subtitles with open-source Whisper. 99 languages, translation to English, $0.006 per minute."
+description: "Transcribe MP3, WAV, M4A and MP4 files, TikTok and Instagram links and podcast pages to text, sentence-level timestamps, SRT subtitles and Word/PDF with open-source Whisper. 99 languages, $0.006 per minute."
 ---
 
 # Speech to text API with Whisper
@@ -9,10 +9,11 @@ Running Whisper yourself needs a GPU or a lot of patience; the hosted API needs 
 
 ## What you get
 
-- Any audio or video file link (MP3, WAV, M4A, FLAC, MP4, MOV...), or base64 uploads.
-- Text, segments, word timestamps, SRT/VTT, Markdown, RAG chunks.
+- Any audio or video file link (MP3, WAV, M4A, FLAC, MP4, MOV...), Google Drive or Dropbox share links, TikTok, Instagram, X and Facebook videos, or pages with a player (SoundCloud, Apple Podcasts episodes, Dailymotion, Loom), or base64 uploads.
+- Text in paragraphs, sentence-level segments, word timestamps, SRT/VTT, Markdown, RAG chunks, and Word (`docx`) or PDF documents.
+- `speakerLabels: true` for interviews and meetings (+$0.003 per minute).
 - `task: "translate"` to English; custom `vocabulary` for names and jargon.
-- Many files per run, one row per file.
+- Many files per run, one row per file; failed and silent files are free.
 
 ## Python example
 
@@ -23,12 +24,13 @@ client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/audio-video-transcriber").call(run_input={
     "sources": [
         {
-            "url": "https://raw.githubusercontent.com/openai/whisper/main/tests/jfk.flac"
+            "url": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3"
         }
     ],
     "model": "base",
     "outputs": [
         "text",
+        "segments",
         "srt"
     ]
 })
@@ -41,18 +43,18 @@ No Python? Open the [Actor page](https://apify.com/fguiraud/audio-video-transcri
 
 ## Real output
 
-Fields from a real run on 2026-09-30 (long values shortened):
+Fields from a real run on 2026-10-19 (long values shortened):
 
 ```json
 {
-  "source": "https://github.com/openai/whisper/raw/main/tests/jfk.flac",
+  "source": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3",
   "status": "ok",
-  "model": "tiny",
+  "model": "base",
   "language": "en",
-  "durationSeconds": 11,
-  "billedMinutes": 1,
-  "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country",
-  "srt": "1\n00:00:00,000 --> 00:00:10,900\nAnd so my fellow Americans ask not what your country can do for you ask what you can do for your country\n"
+  "durationSeconds": 157.88,
+  "billedMinutes": 3,
+  "text": "This is a Librevox recording. All Librevox recordings are in the public domain. For more information or to volunteer, please visit Librevox.org.\n\nThe Gettysburg Address by Abraham Lincoln, November 19th, 1863.\n\nFour scor...",
+  "srt": "1\n00:00:00,050 --> 00:00:01,910\nThis is a Librevox recording.\n\n2\n00:00:02,410 --> 00:00:04,850\nAll Librevox recordings are in the public domain.\n\n3\n00:00:05,490 --> 00:00:09,970\nFor more information or to volunteer, plea..."
 }
 ```
 

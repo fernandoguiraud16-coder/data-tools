@@ -9,9 +9,9 @@ OpenAI's speech-to-text endpoint takes uploads of at most 25 MB, so an hour of a
 
 ## What you get
 
-- File links of any size (MP3, WAV, M4A, MP4...), no chunking.
-- SRT/VTT subtitles, word timestamps, Markdown and RAG chunks.
-- Speaker labels and podcast/TikTok/Instagram inputs in the sibling tools.
+- File links of any size (MP3, WAV, M4A, MP4...), no chunking; also TikTok, Instagram, X and Facebook videos and SoundCloud or Apple Podcasts pages.
+- SRT/VTT subtitles cut at sentences, word timestamps, Markdown, RAG chunks and Word/PDF documents.
+- Speaker labels (`speakerLabels`, +$0.003 per minute).
 - No OpenAI account or key; pay per minute on Apify.
 
 ## Python example
@@ -26,7 +26,7 @@ run = client.actor("fguiraud/audio-video-transcriber").call(run_input={
             "url": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3"
         }
     ],
-    "model": "small",
+    "model": "base",
     "outputs": [
         "text",
         "srt"
@@ -42,24 +42,24 @@ No Python? Open the [Actor page](https://apify.com/fguiraud/audio-video-transcri
 
 ## Real output
 
-Fields from a real run on 2026-09-30 (long values shortened):
+Fields from a real run on 2026-10-19 (long values shortened):
 
 ```json
 {
-  "source": "https://github.com/openai/whisper/raw/main/tests/jfk.flac",
+  "source": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3",
   "status": "ok",
-  "model": "tiny",
+  "model": "base",
   "language": "en",
-  "durationSeconds": 11,
-  "billedMinutes": 1,
-  "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country",
-  "srt": "1\n00:00:00,000 --> 00:00:10,900\nAnd so my fellow Americans ask not what your country can do for you ask what you can do for your country\n"
+  "durationSeconds": 157.88,
+  "billedMinutes": 3,
+  "text": "This is a Librevox recording. All Librevox recordings are in the public domain. For more information or to volunteer, please visit Librevox.org.\n\nThe Gettysburg Address by Abraham Lincoln, November 19th, 1863.\n\nFour scor...",
+  "srt": "1\n00:00:00,050 --> 00:00:01,910\nThis is a Librevox recording.\n\n2\n00:00:02,410 --> 00:00:04,850\nAll Librevox recordings are in the public domain.\n\n3\n00:00:05,490 --> 00:00:09,970\nFor more information or to volunteer, plea..."
 }
 ```
 
 ## Pricing
 
-$0.006 per audio minute, rounded up per file. Speaker labels (podcast and video tools) add $0.003 per minute.
+$0.006 per audio minute, rounded up per file. Speaker labels add $0.003 per minute.
 
 ## FAQ
 

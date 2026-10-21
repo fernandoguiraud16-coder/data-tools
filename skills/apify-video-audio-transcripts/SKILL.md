@@ -60,9 +60,10 @@ apify actors info "fguiraud/youtube-transcript-scraper" --input --json --user-ag
 1. Pick the Actor from the table. Several platforms in one request: run one Actor per platform.
 2. Build the input. Useful options:
    - `outputs`: any of `text`, `segments`, `markdown`, `srt`, `vtt`, `chunks` (default text and segments).
+     `fguiraud/audio-video-transcriber` also takes `docx` and `pdf`: Word/PDF transcripts whose download links come in `files`.
    - `language`: ISO code or `auto` (default). For YouTube use `languages: ["en"]`.
    - `task: "translate"` gives English text from any language (Whisper Actors).
-   - `speakerLabels: true` labels Speaker 1, Speaker 2... (podcast and `fguiraud/video-to-text-transcriber`; adds $0.003 per minute).
+   - `speakerLabels: true` labels Speaker 1, Speaker 2... (`fguiraud/audio-video-transcriber`, the podcast tool and `fguiraud/video-to-text-transcriber`; adds $0.003 per minute).
    - YouTube without captions: `aiFallback: true` transcribes the audio with Whisper ($0.010 per minute).
    - Monitoring: `onlyNewVideos` / `onlyNewEpisodes: true` on a schedule returns only new items.
 3. For long audio (over an hour) or many items, tell the user the estimated cost first.
