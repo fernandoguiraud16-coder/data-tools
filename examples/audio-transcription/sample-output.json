@@ -2,69 +2,165 @@
   "input": {
     "sources": [
       {
-        "url": "https://github.com/openai/whisper/raw/main/tests/jfk.flac"
-      },
-      {
         "url": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3"
       }
     ],
+    "model": "base",
     "outputs": [
       "text",
+      "segments",
       "srt"
     ],
-    "model": "tiny",
-    "failOnError": true,
     "maxEpisodesPerFeed": 3,
     "onlyNewEpisodes": true,
+    "transcriptSource": "auto",
     "language": "auto",
     "task": "transcribe",
+    "speakerLabels": false,
+    "numSpeakers": 0,
     "aiInsights": false,
     "insightsModel": "claude-opus-5",
     "saveFiles": false,
     "wordTimestamps": false,
+    "subtitleMaxChars": 0,
+    "subtitleMaxLines": 2,
+    "subtitleMaxDuration": 6,
     "chunkSize": 1000,
     "skipSilence": true,
     "maxDurationMinutes": 240,
-    "maxFileSizeMb": 1000
+    "maxFileSizeMb": 1000,
+    "failOnError": false
   },
   "items": [
     {
-      "source": "https://github.com/openai/whisper/raw/main/tests/jfk.flac",
-      "status": "ok",
-      "model": "tiny",
-      "task": "transcribe",
-      "language": "en",
-      "languageProbability": 0.962,
-      "durationSeconds": 11,
-      "transcribedSeconds": 11,
-      "billedMinutes": 1,
-      "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country",
-      "srt": "1\n00:00:00,000 --> 00:00:10,900\nAnd so my fellow Americans ask not what your country can do for you ask what you can do for your country\n",
-      "stats": {
-        "processingSeconds": 1.68,
-        "speedFactor": 6.5,
-        "segments": 1,
-        "words": 22
-      },
-      "warnings": []
-    },
-    {
       "source": "https://archive.org/download/gettysburg_johng_librivox/gettysburg_address_64kb.mp3",
       "status": "ok",
-      "model": "tiny",
+      "model": "base",
       "task": "transcribe",
       "language": "en",
-      "languageProbability": 0.996,
+      "languageProbability": 0.999,
       "durationSeconds": 157.88,
       "transcribedSeconds": 157.88,
       "billedMinutes": 3,
-      "text": "This is a Librevox recording. All Librevox recordings are in the public domain. For more information or devolent here, please visit Librevox.org. The Getty Spurig address by Abraham Lincoln, November 19, 1863. Four score and seven years ago, our fathers brought forth on this continent, a new nation [...]",
-      "srt": "1\n00:00:00,050 --> 00:00:32,400\nThis is a Librevox recording. All Librevox recordings are in the public domain. For more information or devolent here, please visit Librevox.org. The Getty Spurig address by Abraham Lincoln, November 19, 1863. Four score and seven years ago, our fathers brought forth [...]",
+      "text": "This is a Librevox recording. All Librevox recordings are in the public domain. For more information or to volunteer, please visit Librevox.org.\n\nThe Gettysburg Address by Abraham Lincoln, November 19th, 1863.\n\nFour score and seven years ago, our fathers brought forth on this continent a new nation conceived in liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation or any nation so conceived and so dedicated can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field as a final resting place for those who here gave their lives that that nation might live. It is all together fitting and proper that we should do this. But, in a larger sense, we cannot dedicate, we cannot consecrate, we cannot hallow this ground. The brave men living and dead who struggled here have consecrated it, far above our poor power to add or detract. The world will little note. nor long remember what we say here. But it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they, who fought here, have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us, that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion. That we here highly resolve that these dead shall not have died in vain, that this nation under God shall have a new birth of freedom, and that government of the people, by the people, for the people shall not perish from the earth. End of Lincoln's Gettysburg Address",
+      "segments": [
+        {
+          "start": 0.05,
+          "end": 1.91,
+          "text": "This is a Librevox recording."
+        },
+        {
+          "start": 2.41,
+          "end": 4.85,
+          "text": "All Librevox recordings are in the public domain."
+        },
+        {
+          "start": 5.49,
+          "end": 9.97,
+          "text": "For more information or to volunteer, please visit Librevox.org."
+        },
+        {
+          "start": 12.85,
+          "end": 21.06,
+          "text": "The Gettysburg Address by Abraham Lincoln, November 19th, 1863."
+        },
+        {
+          "start": 23.16,
+          "end": 31.94,
+          "text": "Four score and seven years ago, our fathers brought forth on this continent a new nation conceived in liberty,"
+        },
+        {
+          "start": 32.39,
+          "end": 37.21,
+          "text": "and dedicated to the proposition that all men are created equal."
+        },
+        {
+          "start": 38.73,
+          "end": 48.97,
+          "text": "Now we are engaged in a great civil war, testing whether that nation or any nation so conceived and so dedicated can long endure."
+        },
+        {
+          "start": 50.34,
+          "end": 54.08,
+          "text": "We are met on a great battlefield of that war."
+        },
+        {
+          "start": 54.86,
+          "end": 62.72,
+          "text": "We have come to dedicate a portion of that field as a final resting place for those who here gave their lives"
+        },
+        {
+          "start": 63.13,
+          "end": 64.71,
+          "text": "that that nation might live."
+        },
+        {
+          "start": 65.94,
+          "end": 69.52,
+          "text": "It is all together fitting and proper that we should do this."
+        },
+        {
+          "start": 70.66,
+          "end": 79.92,
+          "text": "But, in a larger sense, we cannot dedicate, we cannot consecrate, we cannot hallow this ground."
+        },
+        {
+          "start": 81.04,
+          "end": 90.06,
+          "text": "The brave men living and dead who struggled here have consecrated it, far above our poor power to add or detract."
+        },
+        {
+          "start": 91.41,
+          "end": 93.23,
+          "text": "The world will little note."
+        },
+        {
+          "start": 93.59,
+          "end": 95.93,
+          "text": "nor long remember what we say here."
+        },
+        {
+          "start": 96.7,
+          "end": 99.42,
+          "text": "But it can never forget what they did here."
+        },
+        {
+          "start": 100.31,
+          "end": 110.15,
+          "text": "It is for us the living, rather, to be dedicated here to the unfinished work which they, who fought here, have thus far so nobly advanced."
+        },
+        {
+          "start": 110.8,
+          "end": 122.24,
+          "text": "It is rather for us to be here dedicated to the great task remaining before us, that from these honored dead we take increased devotion to that cause"
+        },
+        {
+          "start": 122.76,
+          "end": 126,
+          "text": "for which they gave the last full measure of devotion."
+        },
+        {
+          "start": 126.88,
+          "end": 138.04,
+          "text": "That we here highly resolve that these dead shall not have died in vain, that this nation under God shall have a new birth of freedom,"
+        },
+        {
+          "start": 138.7,
+          "end": 147.08,
+          "text": "and that government of the people, by the people, for the people shall not perish from the earth."
+        },
+        {
+          "start": 148.43,
+          "end": 150.71,
+          "text": "End of Lincoln's Gettysburg Address"
+        }
+      ],
+      "srt": "1\n00:00:00,050 --> 00:00:01,910\nThis is a Librevox recording.\n\n2\n00:00:02,410 --> 00:00:04,850\nAll Librevox recordings are in the public domain.\n\n3\n00:00:05,490 --> 00:00:09,970\nFor more information or to volunteer, please visit Librevox.org.\n\n4\n00:00:12,850 --> 00:00:21,060\nThe Gettysburg Address by Abraham Lincoln, November 19th, 1863.\n\n5\n00:00:23,160 --> 00:00:31,940\nFour score and seven years ago, our fathers brought forth on this continent a new nation conceived in liberty,\n\n6\n00:00:32,390 --> 00:00:37,210\nand dedicated to the proposition that all men are created equal.\n\n7\n00:00:38,730 --> 00:00:48,970\nNow we are engaged in a great civil war, testing whether that nation or any nation so conceived and so dedicated can long endure.\n\n8\n00:00:50,340 --> 00:00:54,080\nWe are met on a great battlefield of that war.\n\n9\n00:00:54,860 --> 00:01:02,720\nWe have come to dedicate a portion of that field as a final resting place for those who here gave their lives\n\n10\n00:01:03,130 --> 00:01:04,710\nthat that nation might live.\n\n11\n00:01:05,940 --> 00:01:09,520\nIt is all together fitting and proper that we should do this.\n\n12\n00:01:10,660 --> 00:01:19,920\nBut, in a larger sense, we cannot dedicate, we cannot consecrate, we cannot hallow this ground.\n\n13\n00:01:21,040 --> 00:01:30,060\nThe brave men living and dead who struggled here have consecrated it, far above our poor power to add or detract.\n\n14\n00:01:31,410 --> 00:01:33,230\nThe world will little note.\n\n15\n00:01:33,590 --> 00:01:35,930\nnor long remember what we say here.\n\n16\n00:01:36,700 --> 00:01:39,420\nBut it can never forget what they did here.\n\n17\n00:01:40,310 --> 00:01:50,150\nIt is for us the living, rather, to be dedicated here to the unfinished work which they, who fought here, have thus far so nobly advanced.\n\n18\n00:01:50,800 --> 00:02:02,240\nIt is rather for us to be here dedicated to the great task remaining before us, that from these honored dead we take increased devotion to that cause\n\n19\n00:02:02,760 --> 00:02:06,000\nfor which they gave the last full measure of devotion.\n\n20\n00:02:06,880 --> 00:02:18,040\nThat we here highly resolve that these dead shall not have died in vain, that this nation under God shall have a new birth of freedom,\n\n21\n00:02:18,700 --> 00:02:27,080\nand that government of the people, by the people, for the people shall not perish from the earth.\n\n22\n00:02:28,430 --> 00:02:30,710\nEnd of Lincoln's Gettysburg Address\n",
       "stats": {
-        "processingSeconds": 7.2,
-        "speedFactor": 21.9,
-        "segments": 5,
-        "words": 306
+        "processingSeconds": 12.58,
+        "speedFactor": 12.6,
+        "segments": 22,
+        "words": 305
       },
       "warnings": []
     }

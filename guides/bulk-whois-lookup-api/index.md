@@ -79,6 +79,10 @@ Competitor prices as listed in the Apify Store on 2026-10-03 (Bronze plan where 
 
 ## FAQ
 
+**How do I check which names are available?**
+
+Paste the candidate names and read `registered`: `false` means the registry reports the domain as not registered (free to buy; some registrars charge a premium for certain names), and the row gets the alert "Domain is not registered".
+
 **How many domains per run?**
 
 Thousands. Very large lists stop safely before the run timeout and mark the rest as skipped.
