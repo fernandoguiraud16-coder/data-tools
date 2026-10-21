@@ -23,6 +23,8 @@ Each file gets a `.txt` transcript and a `.srt` subtitle file in `./transcripts/
 - `--task translate`: transcribe any language straight into English.
 - `--vocabulary`: names and jargon the model should spell correctly.
 
-Files without speech are not charged. For YouTube or web pages, pass a direct link to the audio or video file.
+More options in the Actor input (`run_input` in `transcribe.py`): `speakerLabels: true` for who said what, and `outputs` with `docx` / `pdf` for Word and PDF transcripts (download links in `files`).
+
+Links can be audio/video files, Google Drive or Dropbox share links, TikTok, Instagram, X and Facebook videos, or pages with a player such as SoundCloud, Apple Podcasts episodes, Dailymotion and Loom. Files without speech are not charged. YouTube videos go to [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper), which returns their captions.
 
 Full field reference: [`sample-output.json`](sample-output.json) and the [Actor page](https://apify.com/fguiraud/audio-video-transcriber).
