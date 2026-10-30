@@ -8,7 +8,7 @@
 - [Video to Text Transcriber](https://apify.com/fguiraud/video-to-text-transcriber): TikTok, Instagram Reels, X, Facebook and MP4 to text; optional speaker labels; $0.006 per minute.
 - [Podcast Transcript Scraper](https://apify.com/fguiraud/podcast-transcript-scraper): any podcast by name, Apple Podcasts link or RSS feed; only new episodes on a schedule; speaker labels; $0.006 per minute.
 - [SRT Subtitle Generator](https://apify.com/fguiraud/srt-subtitle-generator): SRT and VTT subtitles for any video or audio; $0.006 per minute.
-- [Instagram Reels Transcript Scraper](https://apify.com/fguiraud/instagram-reels-transcript-scraper): reels by link or a creator's newest reels by @handle, no login; $0.009 per reel.
+- [Instagram Reels Transcript Scraper](https://apify.com/fguiraud/instagram-reels-transcript-scraper): reels by link or a creator's newest reels by @handle, no login; $0.01 per reel.
 - [TikTok Transcript Scraper](https://apify.com/fguiraud/tiktok-transcript-scraper): TikTok videos or whole accounts to text, with views and likes; $0.009 per video.
 - [YouTube Transcript Scraper](https://apify.com/fguiraud/youtube-transcript-scraper): videos, channels, playlists and keyword searches to text, SRT or Markdown; Whisper fallback for videos without captions; $0.003 per transcript.
 - [YouTube Channel Transcripts](https://apify.com/fguiraud/youtube-channel-transcripts): every video of a channel or playlist as text, SRT or Markdown; only new videos on a schedule; $0.003 per transcript.

@@ -38,33 +38,28 @@ No Python? Open the [Actor page](https://apify.com/fguiraud/job-postings-aggrega
 
 ## Real output
 
-Fields from a real run on 2026-10-13 (long values shortened):
+Fields from a real run on 2026-10-24 (long values shortened):
 
 ```json
 {
-  "title": "Data Analyst - Business Intelligence",
-  "company": "DRW",
-  "location": "Chicago, IL",
-  "via": "Indeed",
-  "postedAt": "5 days ago",
-  "salary": "$100K–$130K a year",
-  "salaryMin": 100000,
-  "salaryMax": 130000,
+  "title": "Data Analyst at Chicago Housing Authority - Chicago, Illinois",
+  "company": "Chicago Housing Authority",
+  "location": "Chicago, IL (+1 other)",
+  "via": "Talent.com",
+  "postedAt": "2 days ago",
+  "salary": null,
+  "salaryMin": null,
+  "salaryMax": null,
   "employmentType": "Full-time",
   "applyOptions": [
     {
-      "source": "Indeed",
-      "url": "https://www.indeed.com/viewjob?jk=7ab62c2d61842334&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+      "source": "Talent.com",
+      "url": "https://www.talent.com/view?id=642864359091735843&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
     },
     {
-      "source": "LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/data-analyst-business-intelligence-at-drw-4476905417?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
-    },
-    {
-      "source": "Dice",
-      "url": "https://www.dice.com/job-detail/a39feab3-ded4-4cf9-b267-29ab0ae76cf2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
-    },
-    "..."
+      "source": "Thrife",
+      "url": "https://thrife.com/jobs/job/marketing-project-manager-remote-at-lead-with-integrity-chicago-il-YUdmb0NPUzJYeEdZMEljY095ZkxVdDNCSHc9PQ==?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+    }
   ]
 }
 ```

@@ -39,16 +39,16 @@ No Python? Open the [Actor page](https://apify.com/fguiraud/google-hotels-scrape
 
 ## Real output
 
-Fields from a real run on 2026-10-07 (long values shortened):
+Fields from a real run on 2026-10-23 (long values shortened):
 
 ```json
 {
   "name": "Hilton Panama",
-  "pricePerNight": 201.97,
-  "totalPrice": 664.16,
+  "pricePerNight": 104.03,
+  "totalPrice": 114.03,
   "currency": "USD",
-  "checkIn": "2026-12-20",
-  "nights": 3,
+  "checkIn": "2026-11-06",
+  "nights": 1,
   "rating": 4.6
 }
 ```
@@ -77,7 +77,6 @@ Yes. It is an MCP server at `https://mcp.apify.com/?tools=fguiraud/google-hotels
 - [Daily hotel price monitor](https://apify.com/fguiraud/google-hotels-scraper/examples/daily-hotel-price-monitor)
 - [5-star hotels with ratings and review topics](https://apify.com/fguiraud/google-hotels-scraper/examples/five-star-hotels-with-reviews)
 - [Hotels near a landmark or airport](https://apify.com/fguiraud/google-hotels-scraper/examples/hotels-near-a-landmark)
-- [Hotel market research dataset](https://apify.com/fguiraud/google-hotels-scraper/examples/hotel-market-research-dataset)
 
 ## Related guides
 

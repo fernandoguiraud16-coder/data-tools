@@ -61,7 +61,7 @@ Fields from a real run on 2026-10-03 (long values shortened):
 
 ## Pricing
 
-$0.009 per reel (includes the first minute), then $0.006 per extra minute.
+$0.01 per reel (includes the first minute), then $0.006 per extra minute.
 
 ## FAQ
 

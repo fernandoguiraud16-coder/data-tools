@@ -37,26 +37,28 @@ No Python? Open the [Actor page](https://apify.com/fguiraud/website-contact-scra
 
 ## Real output
 
-Fields from a real run on 2026-10-17 (long values shortened):
+Fields from a real run on 2026-10-24 (long values shortened):
 
 ```json
 {
-  "domain": "apify.com",
+  "domain": "buffer.com",
   "status": "ok",
-  "companyName": "Apify",
+  "companyName": "Buffer",
   "emails": [
-    "support@apify.com",
-    "hello@apify.com"
+    "hello@buffer.com",
+    "legal@buffer.com",
+    "privacy@buffer.com",
+    "..."
   ],
   "phones": [],
-  "address": "Na Příkopě 959/27, 11000, Prague, CZ",
-  "contactPageUrl": "https://apify.com/contact",
-  "linkedin": "http://linkedin.com/company/apify",
-  "x": "https://x.com/apify",
+  "address": null,
+  "contactPageUrl": null,
+  "linkedin": "https://www.linkedin.com/company/bufferapp",
+  "x": "https://x.com/buffer",
   "pagesChecked": [
-    "https://apify.com/",
-    "https://apify.com/contact",
-    "https://apify.com/contact-sales"
+    "https://buffer.com/",
+    "https://buffer.com/legal",
+    "https://buffer.com/about"
   ]
 }
 ```

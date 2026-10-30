@@ -40,7 +40,7 @@ Out of scope (the boundary):
 | YouTube video, channel, playlist or search | `fguiraud/youtube-transcript-scraper` | $0.003 per transcript | `videos` (links or IDs), `channels` (@handle or playlist link), `searchQueries` (keywords; `sortBy`, `uploadDate`, `videoDuration`) |
 | Only a whole YouTube channel, or only a keyword search (same engine and price, focused form) | `fguiraud/youtube-channel-transcripts`, `fguiraud/youtube-search-transcripts` | $0.003 per transcript | `channels` / `searchQueries` |
 | TikTok video or account | `fguiraud/tiktok-transcript-scraper` | $0.009 per video | `sources` (links) or `profiles` (@handle) |
-| Instagram Reel or creator | `fguiraud/instagram-reels-transcript-scraper` | $0.009 per reel | `sources` (links) or `profiles` (@handle, newest 12 reels max) |
+| Instagram Reel or creator | `fguiraud/instagram-reels-transcript-scraper` | $0.01 per reel | `sources` (links) or `profiles` (@handle, newest 12 reels max) |
 | Podcast | `fguiraud/podcast-transcript-scraper` | $0.006 per minute | `podcastFeeds` (name, Apple Podcasts link or RSS URL) |
 | SRT/VTT subtitles for a file | `fguiraud/srt-subtitle-generator` | $0.006 per minute | `sources` (file links) |
 | Any audio or video file, X or Facebook video | `fguiraud/audio-video-transcriber` | $0.006 per minute | `sources` (file links) |

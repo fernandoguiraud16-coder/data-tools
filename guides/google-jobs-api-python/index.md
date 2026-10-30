@@ -38,32 +38,32 @@ No Python? Open the [Actor page](https://apify.com/fguiraud/google-jobs-scraper)
 
 ## Real output
 
-Fields from a real run on 2026-10-07 (long values shortened):
+Fields from a real run on 2026-10-23 (long values shortened):
 
 ```json
 {
-  "title": "Senior Software Engineer (Python)",
-  "company": "Fintal Partners",
+  "title": "Python Fastapi with React AI/Agentic AI developers",
+  "company": "Logicplanet, Inc.",
   "location": "New York, NY",
-  "via": "LinkedIn",
-  "postedAt": "1 day ago",
-  "salary": "$300K–$500K a year",
-  "salaryMin": 300000,
-  "salaryMax": 500000,
-  "salaryPeriod": "year",
-  "employmentType": "Full-time",
-  "applyUrl": "https://www.linkedin.com/jobs/view/senior-software-engineer-python-at-fintal-partners-4474958527?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+  "via": "Dice",
+  "postedAt": "2 days ago",
+  "salary": null,
+  "salaryMin": null,
+  "salaryMax": null,
+  "salaryPeriod": null,
+  "employmentType": "Contractor",
+  "applyUrl": "https://www.dice.com/job-detail/95a6c0de-dd14-4fbc-9b16-1fd72420ad04?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
   "highlights": {
     "Qualifications": [
-      "Autonomy and Modern Tooling: You will work with a cutting-edge tech stack that includes Python (NumPy, Pandas/Polars, Cython), containerization (Docker, Kubernetes), and orchestration (Ansible, Terraform, Airflow)",
-      "An experienced engineer with a track record of building and scaling robust, distributed systems",
-      "A strong command of Python, with hands-on experience using key libraries like NumPy, Pandas/Polars, and Cython",
+      "We are looking for an experienced Full Stack Developer with strong expertise in Python backend development and React frontend development",
+      "The ideal candidate will be responsible for designing, developing, testing, and maintaining scalable web applications and APIs",
+      "Strong experience in Python and backend development",
       "..."
     ],
     "Responsibilities": [
-      "This is a chance to move beyond typical development cycles and directly impact a global trading platform",
-      "You will be building the systems that support their quants and traders, handling petabytes of data on a hybrid CPU/GPU infrastructure",
-      "Impact at Scale: You will own the core Python platform, building the very foundation that allows for global trading research",
+      "Develop and maintain robust backend applications using Python",
+      "Build scalable RESTful APIs and backend services",
+      "Develop responsive and user-friendly web applications using React.js",
       "..."
     ]
   }
@@ -103,7 +103,6 @@ Yes. It is an MCP server at `https://mcp.apify.com/?tools=fguiraud/google-jobs-s
 - [Daily job alerts (only new postings)](https://apify.com/fguiraud/google-jobs-scraper/examples/daily-job-alerts-only-new)
 - [Remote jobs with salary ranges](https://apify.com/fguiraud/google-jobs-scraper/examples/remote-jobs-with-salary)
 - [Jobs from LinkedIn, Indeed and company sites in one search](https://apify.com/fguiraud/google-jobs-scraper/examples/jobs-from-linkedin-and-indeed)
-- [Jobs in Spanish for Latin America](https://apify.com/fguiraud/google-jobs-scraper/examples/jobs-in-spanish-latin-america)
 
 ## Related guides
 

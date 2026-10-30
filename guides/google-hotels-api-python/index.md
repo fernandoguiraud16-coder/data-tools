@@ -40,20 +40,20 @@ No Python? Open the [Actor page](https://apify.com/fguiraud/google-hotels-scrape
 
 ## Real output
 
-Fields from a real run on 2026-10-07 (long values shortened):
+Fields from a real run on 2026-10-23 (long values shortened):
 
 ```json
 {
   "name": "Hilton Panama",
   "hotelClass": 5,
   "rating": 4.6,
-  "reviewCount": 4927,
-  "pricePerNight": 201.97,
-  "totalPrice": 664.16,
-  "taxesAndFees": 58.25,
+  "reviewCount": 4945,
+  "pricePerNight": 104.03,
+  "totalPrice": 114.03,
+  "taxesAndFees": 10,
   "currency": "USD",
-  "checkIn": "2026-12-20",
-  "nights": 3,
+  "checkIn": "2026-11-06",
+  "nights": 1,
   "amenities": [
     "Breakfast ($)",
     "Wi-Fi ($)",
@@ -63,21 +63,21 @@ Fields from a real run on 2026-10-07 (long values shortened):
   "reviewHighlights": [
     {
       "aspect": "Service",
-      "mentions": 321,
-      "positive": 258,
+      "mentions": 322,
+      "positive": 259,
       "negative": 50
     },
     {
       "aspect": "Property",
-      "mentions": 342,
-      "positive": 289,
+      "mentions": 343,
+      "positive": 290,
       "negative": 34
     },
     {
-      "aspect": "Fitness",
-      "mentions": 114,
-      "positive": 103,
-      "negative": 6
+      "aspect": "Breakfast",
+      "mentions": 146,
+      "positive": 118,
+      "negative": 19
     },
     "..."
   ],
@@ -118,7 +118,6 @@ Yes. It is an MCP server at `https://mcp.apify.com/?tools=fguiraud/google-hotels
 - [Daily hotel price monitor](https://apify.com/fguiraud/google-hotels-scraper/examples/daily-hotel-price-monitor)
 - [5-star hotels with ratings and review topics](https://apify.com/fguiraud/google-hotels-scraper/examples/five-star-hotels-with-reviews)
 - [Hotels near a landmark or airport](https://apify.com/fguiraud/google-hotels-scraper/examples/hotels-near-a-landmark)
-- [Hotel market research dataset](https://apify.com/fguiraud/google-hotels-scraper/examples/hotel-market-research-dataset)
 
 ## Related guides
 

@@ -34,7 +34,7 @@ Also in the family (same engine as Audio & Video Transcription, so the `audio-tr
 
 | Actor | What it does |
 |---|---|
-| [Instagram Reels Transcript Scraper](https://apify.com/fguiraud/instagram-reels-transcript-scraper) | Instagram Reels to text with author, date, likes and comments ($0.009 per Reel) |
+| [Instagram Reels Transcript Scraper](https://apify.com/fguiraud/instagram-reels-transcript-scraper) | Instagram Reels to text with author, date, likes and comments ($0.01 per Reel) |
 | [TikTok Transcript Scraper](https://apify.com/fguiraud/tiktok-transcript-scraper) | TikTok videos or whole accounts to text with views and likes ($0.009 per video) |
 | [Video to Text Transcriber](https://apify.com/fguiraud/video-to-text-transcriber) | TikTok, Instagram, X, Facebook and MP4 links to transcripts and readable subtitles, per minute |
 | [SRT Subtitle Generator](https://apify.com/fguiraud/srt-subtitle-generator) | Broadcast-formatted SRT/VTT subtitles (42 characters, 2 lines) |
