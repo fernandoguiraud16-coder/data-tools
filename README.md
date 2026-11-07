@@ -42,6 +42,7 @@ Also in the family (same engine as Audio & Video Transcription, so the `audio-tr
 ## For AI agents
 
 - **MCP:** every tool is listed in the [official MCP registry](https://registry.modelcontextprotocol.io) as `io.github.fernandoguiraud16-coder/<tool>` and served at `https://mcp.apify.com/?tools=fguiraud/<tool>`. See [`examples/mcp-agents`](examples/mcp-agents/).
+- **Claude Code plugin:** `/plugin install data-tools --marketplace fernandoguiraud16-coder/data-tools` adds the 6 skills and the Apify MCP server with 13 tools; Claude Code asks for your Apify API token once (runs are billed to your Apify account at each tool's pay-per-use price).
 - **Agent skills:** `npx skills add fernandoguiraud16-coder/data-tools` installs [6 skills](skills/) for Claude Code, Codex, Cursor and other coding agents.
 - **[llms.txt](llms.txt):** a short index of all tools for LLMs.
 

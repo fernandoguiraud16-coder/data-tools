@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "data-tools",
+  "displayName": "Data Tools (Apify)",
+  "version": "1.0.0",
+  "description": "Transcribe audio, video, podcasts, TikTok and YouTube; bulk WHOIS, DNS, SSL and tech stack of domains; PDF to Markdown; Google Trends, News, Hotels and Jobs. Skills plus the Apify MCP server with 13 pay-per-use Actors.",
+  "author": {
+    "name": "Fernando Guiraud",
+    "url": "https://github.com/fernandoguiraud16-coder"
+  },
+  "homepage": "https://fernandoguiraud16-coder.github.io/data-tools/",
+  "repository": "https://github.com/fernandoguiraud16-coder/data-tools",
+  "license": "MIT",
+  "keywords": [
+    "apify",
+    "transcription",
+    "whisper",
+    "speech-to-text",
+    "whois",
+    "domain",
+    "pdf",
+    "google-trends",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": {
+    "apify-data-tools": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=fguiraud/audio-video-transcriber,fguiraud/podcast-transcript-scraper,fguiraud/tiktok-transcript-scraper,fguiraud/instagram-reels-transcript-scraper,fguiraud/youtube-transcript-scraper,fguiraud/bulk-whois-domain-lookup,fguiraud/website-tech-dns-whois-ssl,fguiraud/website-contact-scraper,fguiraud/document-to-markdown-tables,fguiraud/google-trends-scraper,fguiraud/google-news-scraper,fguiraud/google-hotels-scraper,fguiraud/google-jobs-scraper",
+      "headers": {
+        "Authorization": "Bearer ${user_config.apify_token}"
+      }
+    }
+  },
+  "userConfig": {
+    "apify_token": {
+      "type": "string",
+      "title": "Apify API token",
+      "description": "Your Apify API token (Apify Console > Settings > API & Integrations). Runs are billed to your Apify account at each Actor's pay-per-use price.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

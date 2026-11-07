@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "fguiraud-data-tools",
+  "description": "Data extraction and transcription tools for Claude Code, backed by pay-per-use Apify Actors.",
+  "owner": {
+    "name": "Fernando Guiraud",
+    "url": "https://github.com/fernandoguiraud16-coder"
+  },
+  "plugins": [
+    {
+      "name": "data-tools",
+      "source": "./",
+      "description": "Transcribe audio, video, podcasts, TikTok and YouTube; bulk WHOIS, DNS, SSL and tech stack of domains; PDF to Markdown; Google Trends, News, Hotels and Jobs. Skills plus the Apify MCP server with 13 pay-per-use Actors.",
+      "version": "1.0.0",
+      "category": "data",
+      "tags": [
+        "transcription",
+        "whois",
+        "pdf",
+        "scraping",
+        "mcp"
+      ]
+    }
+  ]
+}
