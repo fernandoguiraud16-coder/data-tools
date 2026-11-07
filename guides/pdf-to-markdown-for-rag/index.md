@@ -17,7 +17,7 @@ LLMs read Markdown far better than raw PDF text: headings, lists and tables surv
 ## Python example
 
 ```python
-from apify_client import ApifyClient  # pip install apify-client
+from apify_client import ApifyClient  # pip install apify-client (3.x)
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/document-to-markdown-tables").call(run_input={
@@ -32,7 +32,7 @@ run = client.actor("fguiraud/document-to-markdown-tables").call(run_input={
     ]
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item["source"], item["stats"])
     print(item["markdown"][:500])
 ```

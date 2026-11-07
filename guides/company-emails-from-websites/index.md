@@ -18,7 +18,7 @@ Prospecting lists usually start as a column of company domains. This tool reads 
 ## Python example
 
 ```python
-from apify_client import ApifyClient  # pip install apify-client
+from apify_client import ApifyClient  # pip install apify-client (3.x)
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/website-contact-scraper").call(run_input={
@@ -29,7 +29,7 @@ run = client.actor("fguiraud/website-contact-scraper").call(run_input={
     ]
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item["domain"], item["status"], item["emails"], item["phones"][:2], item.get("linkedin"))
 ```
 

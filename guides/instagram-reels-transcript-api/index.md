@@ -16,7 +16,7 @@ Instagram's official API has no transcripts. Paste reel links, or just a creator
 ## Python example
 
 ```python
-from apify_client import ApifyClient  # pip install apify-client
+from apify_client import ApifyClient  # pip install apify-client (3.x)
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/instagram-reels-transcript-scraper").call(run_input={
@@ -29,7 +29,7 @@ run = client.actor("fguiraud/instagram-reels-transcript-scraper").call(run_input
     ]
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item["source"], item.get("text", "")[:200])
 ```
 

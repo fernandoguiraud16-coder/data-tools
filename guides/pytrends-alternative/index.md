@@ -17,7 +17,7 @@ description: "pytrends keeps failing with 429 Too Many Requests and has had no r
 ## Python example
 
 ```python
-from apify_client import ApifyClient  # pip install apify-client
+from apify_client import ApifyClient  # pip install apify-client (3.x)
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/google-trends-scraper").call(run_input={
@@ -34,7 +34,7 @@ run = client.actor("fguiraud/google-trends-scraper").call(run_input={
     ]
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item["type"], item.get("terms"), item.get("averages"))
 ```
 

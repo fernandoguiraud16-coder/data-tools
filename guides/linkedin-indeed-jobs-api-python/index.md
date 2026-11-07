@@ -18,7 +18,7 @@ Checking LinkedIn, Indeed and company career pages one by one is slow, and scrap
 ## Python example
 
 ```python
-from apify_client import ApifyClient  # pip install apify-client
+from apify_client import ApifyClient  # pip install apify-client (3.x)
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/job-postings-aggregator").call(run_input={
@@ -30,7 +30,7 @@ run = client.actor("fguiraud/job-postings-aggregator").call(run_input={
     "maxDaysOld": 7
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item["title"], "|", item["company"], "|", [o["source"] for o in item.get("applyOptions") or []])
 ```
 

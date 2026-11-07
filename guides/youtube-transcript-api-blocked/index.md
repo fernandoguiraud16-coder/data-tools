@@ -17,7 +17,7 @@ The `youtube-transcript-api` README says it plainly: YouTube blocks most IPs of 
 ## Python example
 
 ```python
-from apify_client import ApifyClient  # pip install apify-client
+from apify_client import ApifyClient  # pip install apify-client (3.x)
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/youtube-transcript-scraper").call(run_input={
@@ -32,7 +32,7 @@ run = client.actor("fguiraud/youtube-transcript-scraper").call(run_input={
     ]
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     for seg in item.get("segments", []):
         print(seg)
 ```

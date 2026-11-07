@@ -17,7 +17,7 @@ Libraries like `python-whois` query port 43 and parse free-text answers whose fo
 ## Python example
 
 ```python
-from apify_client import ApifyClient  # pip install apify-client
+from apify_client import ApifyClient  # pip install apify-client (3.x)
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/bulk-whois-domain-lookup").call(run_input={
@@ -29,7 +29,7 @@ run = client.actor("fguiraud/bulk-whois-domain-lookup").call(run_input={
     "includeSsl": False
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item["domain"], item.get("registered"), item.get("expiryDate"))
 ```
 

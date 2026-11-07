@@ -16,7 +16,7 @@ Copying tables out of PDFs breaks columns. This tool detects each table, keeps r
 ## Python example
 
 ```python
-from apify_client import ApifyClient  # pip install apify-client
+from apify_client import ApifyClient  # pip install apify-client (3.x)
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("fguiraud/pdf-table-extractor").call(run_input={
@@ -28,7 +28,7 @@ run = client.actor("fguiraud/pdf-table-extractor").call(run_input={
     "saveFiles": True
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     for table in item["tables"]:
         print(table["page"], table["header"])
 ```
