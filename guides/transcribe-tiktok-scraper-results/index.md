@@ -65,7 +65,7 @@ $0.009 per video (includes the first minute), then $0.006 per extra minute. The 
 | This tool | $0.009 per video + $0.006 per extra minute |
 | clockworks/tiktok-scraper built-in transcription | $0.041 per started minute per video (Bronze) |
 
-Competitor prices as listed in the Apify Store on 2026-10-03 (Bronze plan where tiers differ); they can change.
+Competitor prices as listed in the Apify Store on 2026-11-07 (Bronze plan where tiers differ); they can change.
 
 ## FAQ
 
