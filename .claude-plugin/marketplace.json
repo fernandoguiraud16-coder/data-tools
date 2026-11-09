@@ -10,8 +10,8 @@
     {
       "name": "data-tools",
       "source": "./",
-      "description": "Transcribe audio, video, podcasts, TikTok and YouTube; bulk WHOIS, DNS, SSL and tech stack of domains; PDF to Markdown; Google Trends, News, Hotels and Jobs. Skills plus the Apify MCP server with 13 pay-per-use Actors.",
-      "version": "1.0.0",
+      "description": "Transcribe audio, video, podcasts, TikTok and YouTube; bulk WHOIS, DNS, SSL and tech stack of domains; PDF to Markdown; Google Trends, News, Hotels, Jobs and keyword research. Skills plus the Apify MCP server with 14 pay-per-use Actors.",
+      "version": "1.1.0",
       "category": "data",
       "tags": [
         "transcription",
