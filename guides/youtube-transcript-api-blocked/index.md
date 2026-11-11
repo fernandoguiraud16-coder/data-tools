@@ -57,7 +57,7 @@ Fields from a real run on 2026-09-26 (long values shortened):
 
 ## Pricing
 
-$0.003 per transcript, residential proxy included. With your own proxies the library is cheaper per call, but you maintain the proxy account and retries.
+$0.001 per transcript, proxies included. With your own proxies the library is cheaper per call, but you maintain the proxy account and retries.
 
 ## FAQ
 

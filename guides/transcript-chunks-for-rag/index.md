@@ -54,7 +54,7 @@ Fields from a real run on 2026-10-19 (long values shortened):
 
 ## Pricing
 
-Same as the transcription itself: $0.006 per minute (files), $0.003 per YouTube transcript.
+Same as the transcription itself: $0.006 per minute (files), $0.001 per YouTube transcript.
 
 ## FAQ
 

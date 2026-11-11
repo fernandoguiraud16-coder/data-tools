@@ -56,7 +56,7 @@ Fields from a real run on 2026-09-26 (long values shortened):
 
 ## Pricing
 
-$0.003 per transcript. 100 videos cost $0.30.
+$0.001 per transcript. 100 videos cost $0.10.
 
 ## FAQ
 

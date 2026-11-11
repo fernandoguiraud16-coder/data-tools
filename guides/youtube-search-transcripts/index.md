@@ -58,7 +58,7 @@ Fields from a real run on 2026-10-08 (long values shortened):
 
 ## Pricing
 
-$0.003 per transcript. Searching is free; videos without captions are not charged.
+$0.001 per transcript. Searching is free; videos without captions are not charged.
 
 ## FAQ
 

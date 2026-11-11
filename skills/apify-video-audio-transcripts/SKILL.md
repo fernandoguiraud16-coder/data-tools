@@ -37,8 +37,8 @@ Out of scope (the boundary):
 
 | User need | Actor ID | Price | Main input |
 |-----------|----------|-------|------------|
-| YouTube video, channel, playlist or search | `fguiraud/youtube-transcript-scraper` | $0.003 per transcript | `videos` (links or IDs), `channels` (@handle or playlist link), `searchQueries` (keywords; `sortBy`, `uploadDate`, `videoDuration`) |
-| Only a whole YouTube channel, or only a keyword search (same engine and price, focused form) | `fguiraud/youtube-channel-transcripts`, `fguiraud/youtube-search-transcripts` | $0.003 per transcript | `channels` / `searchQueries` |
+| YouTube video, channel, playlist or search | `fguiraud/youtube-transcript-scraper` | $0.001 per transcript | `videos` (links or IDs), `channels` (@handle or playlist link), `searchQueries` (keywords; `sortBy`, `uploadDate`, `videoDuration`) |
+| Only a whole YouTube channel, or only a keyword search (same engine and price, focused form) | `fguiraud/youtube-channel-transcripts`, `fguiraud/youtube-search-transcripts` | $0.001 per transcript | `channels` / `searchQueries` |
 | TikTok video or account | `fguiraud/tiktok-transcript-scraper` | $0.009 per video | `sources` (links) or `profiles` (@handle) |
 | Instagram Reel or creator | `fguiraud/instagram-reels-transcript-scraper` | $0.01 per reel | `sources` (links) or `profiles` (@handle, newest 12 reels max) |
 | Podcast | `fguiraud/podcast-transcript-scraper` | $0.006 per minute | `podcastFeeds` (name, Apple Podcasts link or RSS URL) |
@@ -83,7 +83,7 @@ apify datasets get-items DATASET_ID --format json \
 ## Cost guardrails
 
 - Whisper Actors bill per audio minute, rounded up per file: a 3-hour podcast episode is $1.08 at $0.006/min. For long or many files, sum `durationSeconds` estimates (or episode lengths from the feed) and confirm with the user first; set `maxDurationMinutes` to cap each file.
-- Speaker labels add $0.003/min; YouTube `aiFallback` costs $0.010/min instead of $0.003 per transcript. Turn them on only when asked.
+- Speaker labels add $0.003/min; YouTube `aiFallback` costs $0.010/min instead of $0.001 per transcript. Turn them on only when asked.
 - Accounts and channels multiply: `profiles` x `maxVideosPerProfile` and `channels` x `maxVideosPerChannel` are the item counts you pay for.
 
 ## Failure modes

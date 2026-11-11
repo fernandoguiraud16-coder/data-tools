@@ -59,11 +59,11 @@ Fields from a real run on 2026-09-26 (long values shortened):
 
 ## Pricing
 
-$0.003 per transcript. Videos without captions, with `aiFallback` on: $0.010 per audio minute instead.
+$0.001 per transcript. Videos without captions, with `aiFallback` on: $0.010 per audio minute instead.
 
 | Tool | Price |
 |---|---|
-| This tool | $0.003 per transcript, AI fallback optional |
+| This tool | $0.001 per transcript, AI fallback optional |
 | starvibe/youtube-video-transcript | $0.005 per video |
 | pintostudio/youtube-transcript-scraper | $0.01 per video |
 
