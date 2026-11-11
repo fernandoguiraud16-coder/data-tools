@@ -25,7 +25,7 @@
 - [Google Trends Scraper](https://apify.com/fguiraud/google-trends-scraper): interest over time and by region, related and rising queries, trending now; $0.002 per term.
 - [Google News Scraper + Full Article Text](https://apify.com/fguiraud/google-news-scraper): news search and topics with full article text in Markdown; $0.002 per article (+$0.002 with full text).
 - [Google Ads Transparency Scraper](https://apify.com/fguiraud/google-ads-transparency-scraper): every Google ad of an advertiser or domain (search, image, YouTube); $0.0015 per ad.
-- [Google Keyword Research](https://apify.com/fguiraud/google-keyword-research): keyword ideas from Google Autocomplete (question and a-z expansion), People also ask and related searches, with search intent, any country and language; $0.0006 per idea.
+- [Google Keyword Research](https://apify.com/fguiraud/google-keyword-research): keyword ideas from Google Autocomplete (question and a-z expansion), People also ask and related searches, plus optional YouTube and Bing autocomplete, with search intent, any country and language; $0.0006 per idea.
 
 ## Travel and jobs
 
